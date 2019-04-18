@@ -1,0 +1,40 @@
+<ui version="4.0" >
+ <class>emoticonSettingsClass</class>
+ <widget class="QWidget" name="emoticonSettingsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>emoticonSettings</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QComboBox" name="themeBox" />
+   </item>
+   <item row="1" column="0" >
+    <widget class="QListWidget" name="emoticonList" >
+     <property name="dragDropMode" >
+      <enum>QAbstractItemView::NoDragDrop</enum>
+     </property>
+     <property name="movement" >
+      <enum>QListView::Static</enum>
+     </property>
+     <property name="layoutMode" >
+      <enum>QListView::SinglePass</enum>
+     </property>
+     <property name="viewMode" >
+      <enum>QListView::IconMode</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

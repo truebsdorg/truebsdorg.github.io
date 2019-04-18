@@ -1,0 +1,528 @@
+<ui version="4.0" >
+ <class>eventsSettingsClass</class>
+ <widget class="QWidget" name="eventsSettingsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>470</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>eventsSettings</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>448</width>
+        <height>313</height>
+       </rect>
+      </property>
+      <attribute name="title" >
+       <string>General</string>
+      </attribute>
+      <attribute name="icon" >
+       <iconset resource="../../../../qutim.qrc" >
+        <normaloff>:/icons/crystal_project/events.png</normaloff>:/icons/crystal_project/events.png</iconset>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" >
+        <widget class="QGroupBox" name="trayMessagesBox" >
+         <property name="title" >
+          <string>Show tray messages</string>
+         </property>
+         <property name="checkable" >
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" >
+          <item rowspan="2" row="0" column="0" >
+           <layout class="QHBoxLayout" >
+            <property name="sizeConstraint" >
+             <enum>QLayout::SetFixedSize</enum>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" >
+              <property name="sizeConstraint" >
+               <enum>QLayout::SetFixedSize</enum>
+              </property>
+              <item>
+               <widget class="QLabel" name="widthLabel" >
+                <property name="text" >
+                 <string>Width:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="heightLabel" >
+                <property name="text" >
+                 <string>Height:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="timeLabel" >
+                <property name="text" >
+                 <string>Show time:</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" >
+              <property name="sizeConstraint" >
+               <enum>QLayout::SetFixedSize</enum>
+              </property>
+              <item>
+               <widget class="QSpinBox" name="widthSpinBox" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="suffix" >
+                 <string> px</string>
+                </property>
+                <property name="minimum" >
+                 <number>30</number>
+                </property>
+                <property name="maximum" >
+                 <number>500</number>
+                </property>
+                <property name="value" >
+                 <number>300</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="heightSpinBox" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="suffix" >
+                 <string> px</string>
+                </property>
+                <property name="minimum" >
+                 <number>30</number>
+                </property>
+                <property name="maximum" >
+                 <number>400</number>
+                </property>
+                <property name="singleStep" >
+                 <number>1</number>
+                </property>
+                <property name="value" >
+                 <number>200</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="timeSpinBox" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="layoutDirection" >
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="alignment" >
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="suffix" >
+                 <string> s</string>
+                </property>
+                <property name="minimum" >
+                 <number>1</number>
+                </property>
+                <property name="maximum" >
+                 <number>60</number>
+                </property>
+                <property name="value" >
+                 <number>6</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1" >
+           <layout class="QHBoxLayout" >
+            <item>
+             <layout class="QVBoxLayout" >
+              <property name="sizeConstraint" >
+               <enum>QLayout::SetFixedSize</enum>
+              </property>
+              <item>
+               <widget class="QLabel" name="positionLabel" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text" >
+                 <string>Position:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="styleLabel" >
+                <property name="sizePolicy" >
+                 <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text" >
+                 <string>Style:</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" >
+              <item>
+               <widget class="QComboBox" name="positionComboBox" >
+                <property name="currentIndex" >
+                 <number>3</number>
+                </property>
+                <property name="sizeAdjustPolicy" >
+                 <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                </property>
+                <item>
+                 <property name="text" >
+                  <string>Upper left corner</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text" >
+                  <string>Upper right corner</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text" >
+                  <string>Lower left corner</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text" >
+                  <string>Lower right corner</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="styleComboBox" >
+                <property name="currentIndex" >
+                 <number>1</number>
+                </property>
+                <item>
+                 <property name="text" >
+                  <string>No slide</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text" >
+                  <string>Slide vertically</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text" >
+                  <string>Slide horizontally</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1" >
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0" >
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <layout class="QHBoxLayout" >
+         <item>
+          <widget class="QCheckBox" name="trayBalloonBox" >
+           <property name="text" >
+            <string>Show a balloon messages</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="balloonSecBox" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="frame" >
+            <bool>true</bool>
+           </property>
+           <property name="suffix" >
+            <string> s</string>
+           </property>
+           <property name="prefix" >
+            <string/>
+           </property>
+           <property name="minimum" >
+            <number>5</number>
+           </property>
+           <property name="maximum" >
+            <number>60</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QCheckBox" name="trayBlinkBox" >
+         <property name="text" >
+          <string>Disable tray blinking</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" >
+        <widget class="QCheckBox" name="trayButtonBox" >
+         <property name="text" >
+          <string>Disable task bar window button blinking</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" >
+        <widget class="QCheckBox" name="dshowBox" >
+         <property name="text" >
+          <string>Don't show messages if my status is N/A or Occupied</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>396</width>
+           <height>16</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>448</width>
+        <height>313</height>
+       </rect>
+      </property>
+      <attribute name="title" >
+       <string>Notifications</string>
+      </attribute>
+      <attribute name="icon" >
+       <iconset resource="../../../../qutim.qrc" >
+        <normaloff>:/icons/crystal_project/notification.png</normaloff>:/icons/crystal_project/notification.png</iconset>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout" >
+       <item row="1" column="0" >
+        <layout class="QHBoxLayout" name="horizontalLayout_2" >
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout" >
+           <property name="sizeConstraint" >
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="label" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text" >
+              <string>Theme:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text" >
+              <string>Test:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2" >
+           <item>
+            <widget class="QComboBox" name="trayThemeBox" />
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout" >
+             <item>
+              <widget class="QComboBox" name="testBox" />
+             </item>
+             <item>
+              <widget class="QToolButton" name="testEventButton" >
+               <property name="maximumSize" >
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="toolTip" >
+                <string>Test</string>
+               </property>
+               <property name="text" >
+                <string/>
+               </property>
+               <property name="icon" >
+                <iconset resource="../../../../qutim.qrc" >
+                 <normaloff>:/icons/crystal_project/show.png</normaloff>:/icons/crystal_project/show.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QGroupBox" name="notifyBox" >
+         <property name="title" >
+          <string>Notify when contacts</string>
+         </property>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="QCheckBox" name="signOnBox" >
+            <property name="text" >
+             <string>Sign on</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QCheckBox" name="signOffBox" >
+            <property name="text" >
+             <string>Sign off</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" >
+           <widget class="QCheckBox" name="typingBox" >
+            <property name="text" >
+             <string>Typing Message</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" >
+           <widget class="QCheckBox" name="changeStatusBox" >
+            <property name="text" >
+             <string>Change status</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" >
+           <widget class="QCheckBox" name="awayBox" >
+            <property name="text" >
+             <string>Read away message</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources>
+  <include location="../../../../qutim.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>trayBalloonBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>balloonSecBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>171</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>229</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

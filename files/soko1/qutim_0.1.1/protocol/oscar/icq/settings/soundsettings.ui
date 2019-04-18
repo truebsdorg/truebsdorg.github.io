@@ -1,0 +1,371 @@
+<ui version="4.0" >
+ <class>SoundSettingsClass</class>
+ <widget class="QWidget" name="SoundSettingsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>449</width>
+    <height>389</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>soundSettings</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QTabWidget" name="TabSettings" >
+     <property name="tabPosition" >
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="tabShape" >
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <property name="elideMode" >
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <widget class="QWidget" name="playTab" >
+      <attribute name="title" >
+       <string>Play</string>
+      </attribute>
+      <attribute name="icon" >
+       <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/player_play.png</iconset>
+      </attribute>
+      <attribute name="toolTip" >
+       <string>Main Window Settings</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" colspan="3" >
+        <layout class="QHBoxLayout" >
+         <item>
+          <layout class="QVBoxLayout" >
+           <item>
+            <widget class="QLabel" name="systemLabel" >
+             <property name="text" >
+              <string>Play &amp;with:</string>
+             </property>
+             <property name="buddy" >
+              <cstring>systemCombo</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="commandLabel" >
+             <property name="text" >
+              <string>&amp;Command:&lt;br />(use &lt;b>%1&lt;/b> for filename)</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
+             </property>
+             <property name="buddy" >
+              <cstring>commandEdit</cstring>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" >
+           <item>
+            <layout class="QHBoxLayout" >
+             <item>
+              <widget class="QComboBox" name="systemCombo" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <item>
+                <property name="text" >
+                 <string>No sound</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <spacer>
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" >
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" >
+             <item>
+              <widget class="QLineEdit" name="commandEdit" >
+               <property name="enabled" >
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="commandButton" >
+               <property name="enabled" >
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize" >
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize" >
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text" >
+                <string/>
+               </property>
+               <property name="icon" >
+                <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/folder.png</iconset>
+               </property>
+               <property name="flat" >
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0" colspan="3" >
+        <widget class="QLabel" name="playOnlyLabel" >
+         <property name="text" >
+          <string>Play sounds only when my status is:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3" >
+        <widget class="QTreeWidget" name="playOnlyTree" >
+         <property name="alternatingRowColors" >
+          <bool>false</bool>
+         </property>
+         <property name="rootIsDecorated" >
+          <bool>false</bool>
+         </property>
+         <property name="itemsExpandable" >
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>Status</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="3" column="0" >
+        <widget class="QCheckBox" name="activeChatCheck" >
+         <property name="text" >
+          <string>Don't play sounds if chat window is active</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>21</width>
+           <height>24</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="2" >
+        <widget class="QPushButton" name="selAllButton" >
+         <property name="text" >
+          <string>Select &amp;All</string>
+         </property>
+         <property name="icon" >
+          <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/selall.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="eventsTab" >
+      <attribute name="title" >
+       <string>Events</string>
+      </attribute>
+      <attribute name="icon" >
+       <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/playsound.png</iconset>
+      </attribute>
+      <attribute name="toolTip" >
+       <string>Contact List Settings</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" colspan="4" >
+        <widget class="QLabel" name="label" >
+         <property name="text" >
+          <string>&amp;Play sound on events:</string>
+         </property>
+         <property name="buddy" >
+          <cstring>eventsTree</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="4" >
+        <widget class="QTreeWidget" name="eventsTree" >
+         <property name="enabled" >
+          <bool>true</bool>
+         </property>
+         <property name="rootIsDecorated" >
+          <bool>false</bool>
+         </property>
+         <property name="itemsExpandable" >
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>Events</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="4" >
+        <widget class="QLabel" name="label_2" >
+         <property name="text" >
+          <string>&amp;Sound file:</string>
+         </property>
+         <property name="buddy" >
+          <cstring>fileEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" >
+        <widget class="QPushButton" name="playButton" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="icon" >
+          <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/player_volume.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" >
+        <widget class="QLineEdit" name="fileEdit" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2" >
+        <widget class="QPushButton" name="openButton" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="icon" >
+          <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/folder.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" >
+        <widget class="QPushButton" name="applyButton" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="icon" >
+          <iconset resource="../../../../qutim.qrc" >:/icons/crystal_project/apply.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="4" >
+        <layout class="QHBoxLayout" >
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType" >
+            <enum>QSizePolicy::MinimumExpanding</enum>
+           </property>
+           <property name="sizeHint" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="exportButton" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text" >
+            <string>Export...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="importButton" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text" >
+            <string>Import...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources>
+  <include location="../../../../qutim.qrc" />
+ </resources>
+ <connections/>
+</ui>

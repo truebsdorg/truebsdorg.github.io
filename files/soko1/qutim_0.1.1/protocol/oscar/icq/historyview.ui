@@ -1,0 +1,113 @@
+<ui version="4.0" >
+ <class>historyViewClass</class>
+ <widget class="QWidget" name="historyViewClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>336</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>historyView</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="1" column="0" >
+    <widget class="QListWidget" name="dateList" >
+     <property name="minimumSize" >
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize" >
+      <size>
+       <width>100</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>false</bool>
+     </property>
+     <property name="movement" >
+      <enum>QListView::Static</enum>
+     </property>
+     <property name="flow" >
+      <enum>QListView::TopToBottom</enum>
+     </property>
+     <property name="isWrapping" stdset="0" >
+      <bool>false</bool>
+     </property>
+     <property name="layoutMode" >
+      <enum>QListView::SinglePass</enum>
+     </property>
+     <property name="viewMode" >
+      <enum>QListView::ListMode</enum>
+     </property>
+     <property name="selectionRectVisible" >
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2" >
+    <widget class="icqTextBrowser" name="historyChat" >
+     <property name="openExternalLinks" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="sString" >
+     <property name="text" >
+      <string>Search string:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QLineEdit" name="lSearch" />
+   </item>
+   <item row="0" column="2" >
+    <widget class="QToolButton" name="bSearch" >
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../../../qutim.qrc" >
+       <normaloff>:/icons/crystal_project/request.png</normaloff>:/icons/crystal_project/request.png</iconset>
+     </property>
+     <property name="shortcut" >
+      <string>Return</string>
+     </property>
+     <property name="autoExclusive" >
+      <bool>false</bool>
+     </property>
+     <property name="autoRaise" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>icqTextBrowser</class>
+   <extends>QTextBrowser</extends>
+   <header>protocol/oscar/icq/icqtextbrowser.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../qutim.qrc" />
+ </resources>
+ <connections/>
+</ui>

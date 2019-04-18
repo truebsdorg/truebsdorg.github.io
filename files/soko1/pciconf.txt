@@ -1,0 +1,110 @@
+agp0@pci0:0:0:	class=0x060000 card=0x80ac1043 chip=0x01e010de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 AGP Controller'
+    class      = bridge
+    subclass   = HOST-PCI
+none0@pci0:0:1:	class=0x050000 card=0x80ac1043 chip=0x01eb10de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 Memory Controller 1'
+    class      = memory
+    subclass   = RAM
+none1@pci0:0:2:	class=0x050000 card=0x80ac1043 chip=0x01ee10de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 Memory Controller 4'
+    class      = memory
+    subclass   = RAM
+none2@pci0:0:3:	class=0x050000 card=0x80ac1043 chip=0x01ed10de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 Memory Controller 3'
+    class      = memory
+    subclass   = RAM
+none3@pci0:0:4:	class=0x050000 card=0x80ac1043 chip=0x01ec10de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 Memory Controller 2'
+    class      = memory
+    subclass   = RAM
+none4@pci0:0:5:	class=0x050000 card=0x80ac1043 chip=0x01ef10de rev=0xc1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 Memory Controller 5'
+    class      = memory
+    subclass   = RAM
+isab0@pci0:1:0:	class=0x060100 card=0x80ad1043 chip=0x006010de rev=0xa4 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP2 ISA Bridge'
+    class      = bridge
+    subclass   = PCI-ISA
+none5@pci0:1:1:	class=0x0c0500 card=0x0c111043 chip=0x006410de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP-T? SMBus Controller'
+    class      = serial bus
+    subclass   = SMBus
+ohci0@pci0:2:0:	class=0x0c0310 card=0x0c111043 chip=0x006710de rev=0xa4 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP2 OpenHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+ohci1@pci0:2:1:	class=0x0c0310 card=0x0c111043 chip=0x006710de rev=0xa4 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP2 OpenHCI USB Controller'
+    class      = serial bus
+    subclass   = USB
+ehci0@pci0:2:2:	class=0x0c0320 card=0x0c111043 chip=0x006810de rev=0xa4 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP2 EHCI USB 2.0 Controller'
+    class      = serial bus
+    subclass   = USB
+nve0@pci0:4:0:	class=0x020000 card=0x80a71043 chip=0x006610de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP-T Networking Adapter'
+    class      = network
+    subclass   = ethernet
+none6@pci0:5:0:	class=0x040100 card=0x0c111043 chip=0x006b10de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP-T? Audio Processing Unit (Dolby Digital)'
+    class      = multimedia
+    subclass   = audio
+none7@pci0:6:0:	class=0x040100 card=0x80951043 chip=0x006a10de rev=0xa1 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP-T Audio Codec Interface'
+    class      = multimedia
+    subclass   = audio
+pcib1@pci0:8:0:	class=0x060400 card=0x00000000 chip=0x006c10de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP-T CPU to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+atapci1@pci0:9:0:	class=0x01018a card=0x0c111043 chip=0x006510de rev=0xa2 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP2 EIDE Controller'
+    class      = mass storage
+    subclass   = ATA
+pcib2@pci0:12:0:	class=0x060400 card=0x00000000 chip=0x006d10de rev=0xa3 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP-T Audio Codec Interface'
+    class      = bridge
+    subclass   = PCI-PCI
+fwohci0@pci0:13:0:	class=0x0c0010 card=0x809a1043 chip=0x006e10de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce MCP2 OHCI Compliant IEEE 1394 Controller'
+    class      = serial bus
+    subclass   = FireWire
+pcib3@pci0:30:0:	class=0x060400 card=0x00000000 chip=0x01e810de rev=0xc1 hdr=0x01
+    vendor     = 'NVIDIA Corporation'
+    device     = 'nForce2 AGP Host to PCI Bridge'
+    class      = bridge
+    subclass   = PCI-PCI
+atapci0@pci1:11:0:	class=0x010400 card=0x61121095 chip=0x31121095 rev=0x02 hdr=0x00
+    vendor     = 'Silicon Image Inc (Was: CMD Technology Inc)'
+    device     = 'SiI 3112 SATALink/SATARaid Controller'
+    class      = mass storage
+    subclass   = RAID
+xl0@pci2:1:0:	class=0x020000 card=0x80ab1043 chip=0x920110b7 rev=0x40 hdr=0x00
+    vendor     = '3COM Corp, Networking Division'
+    device     = '3C920B-EMB Integrated Fast Ethernet Controller'
+    class      = network
+    subclass   = ethernet
+none8@pci3:0:0:	class=0x030000 card=0x87831462 chip=0x017210de rev=0xa3 hdr=0x00
+    vendor     = 'NVIDIA Corporation'
+    device     = 'GeForce4 MX 420 [NV17.3]'
+    class      = display
+    subclass   = VGA

@@ -1,0 +1,212 @@
+<ui version="4.0" >
+ <class>statusSettingsClass</class>
+ <widget class="QWidget" name="statusSettingsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>statusSettings</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QFrame" name="frame" >
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="0" column="0" colspan="2" >
+       <widget class="QCheckBox" name="webawareBox" >
+        <property name="text" >
+         <string>Allow other to view my status from the Web</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2" >
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="QCheckBox" name="autoAwayBox" >
+          <property name="text" >
+           <string>Auto-away after:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="awayMinBox" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="suffix" >
+           <string> min</string>
+          </property>
+          <property name="minimum" >
+           <number>2</number>
+          </property>
+          <property name="maximum" >
+           <number>60</number>
+          </property>
+          <property name="value" >
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="2" >
+       <widget class="QCheckBox" name="customStatusBox" >
+        <property name="text" >
+         <string>Add additional statuses to status menu</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QComboBox" name="statusBox" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text" >
+          <string>Away</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>Lunch</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>Evil</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>Depression</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>At home</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>At work</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>Occupied</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>DND</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="1" >
+       <widget class="QCheckBox" name="messageWinBox" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text" >
+         <string>Don't show autoreply dialog</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="3" >
+       <widget class="QTextEdit" name="statusEdit" >
+        <property name="lineWrapMode" >
+         <enum>QTextEdit::NoWrap</enum>
+        </property>
+        <property name="acceptRichText" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="2" >
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>270</width>
+          <height>31</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0" colspan="2" >
+       <widget class="QCheckBox" name="xStatusBox" >
+        <property name="text" >
+         <string>Show custom statuses</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2" >
+       <widget class="QCheckBox" name="contactToolTip" >
+        <property name="text" >
+         <string>Ask for xStauses automatically</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>autoAwayBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>awayMinBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>134</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>178</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

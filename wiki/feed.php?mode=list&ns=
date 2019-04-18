@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://truebsd.org/wiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://truebsd.org/wiki/feed.php">
+        <title>TrueBSD Project</title>
+        <description></description>
+        <link>http://truebsd.org/wiki/</link>
+        <image rdf:resource="http://truebsd.org/wiki/lib/images/favicon.ico" />
+       <dc:date>2013-01-24T07:15:38+04:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=bsdl&amp;rev=1218088187&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=cannibal_corpse&amp;rev=1358537536&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=devel_ru&amp;rev=1358537536&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=feedback&amp;rev=1218109454&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=main&amp;rev=1227529086&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=subversion&amp;rev=1243987256&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=tmp_be&amp;rev=1226588535&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=translation_ru&amp;rev=1221990170&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_be&amp;rev=1227521186&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_de&amp;rev=1358537536&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_en&amp;rev=1219833438&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_ru&amp;rev=1227521022&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_ua&amp;rev=1227521311&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_be&amp;rev=1226901753&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_de&amp;rev=1226901741&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_en&amp;rev=1226901727&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_ru&amp;rev=1226901903&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_ua&amp;rev=1226901773&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=update_truebsd_ru&amp;rev=1238853098&amp;do=diff"/>
+                <rdf:li rdf:resource="http://truebsd.org/wiki/doku.php?id=update_truebsd_ua&amp;rev=1227526557&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://truebsd.org/wiki/lib/images/favicon.ico">
+        <title>TrueBSD Project</title>
+        <link>http://truebsd.org/wiki/</link>
+        <url>http://truebsd.org/wiki/lib/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=bsdl&amp;rev=1218088187&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-08-07T09:49:47+04:00</dc:date>
+        <title>bsdl</title>
+        <link>http://truebsd.org/wiki/doku.php?id=bsdl&amp;rev=1218088187&amp;do=diff</link>
+        <description>Copyright © 2006–2008 TrueBSD Project &lt;http://www.TrueBSD.org&gt;
+All rights reserved.
+
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+docum…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=cannibal_corpse&amp;rev=1358537536&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2013-01-18T23:32:16+04:00</dc:date>
+        <title>cannibal_corpse</title>
+        <link>http://truebsd.org/wiki/doku.php?id=cannibal_corpse&amp;rev=1358537536&amp;do=diff</link>
+        <description>7. Butchered At Birth
+“Забитый при рождении”
+
+Рождение – это всегда боль
+Гниющий в матке путешествует внутри тела
+Истекающий кровью в гробу
+Голодный ребёнок пожирает всё из плоти мёртвой сучки
+Ужаснейшая вонь
+Моё тело растёт, мои страдания причиняют мне мучения
+Тяжёлая потеря крови
+Младенец забитый при рождении
+Терзающий ребёнка, купающийся в крови
+Я гнию и вызываю отвращение
+Моё тело разлагается
+Мама разорвана на части, её лицо разбито
+Я оставляю в ней отверстия ножом
+Эсофогус разрезан
+Желчь со…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=devel_ru&amp;rev=1358537536&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2013-01-18T23:32:16+04:00</dc:date>
+        <title>devel_ru</title>
+        <link>http://truebsd.org/wiki/doku.php?id=devel_ru&amp;rev=1358537536&amp;do=diff</link>
+        <description>Subversion-хранилище
+
+
+Получить содержимое каталога /truebsd можно выполнив в терминале:
+
+
+%svn checkout svn://86.57.254.241:/truebsd truebsd
+
+
+Внимание: Сервер доступен не всегда, т.к. это мой домашний компьютер</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=feedback&amp;rev=1218109454&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-08-07T15:44:14+04:00</dc:date>
+        <title>feedback</title>
+        <link>http://truebsd.org/wiki/doku.php?id=feedback&amp;rev=1218109454&amp;do=diff</link>
+        <description>Нашли ошибки в документации TrueBSD? Есть желание помочь с переводами? Спасибо Вам! Для связи используйте следующую форму:</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=main&amp;rev=1227529086&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-24T15:18:06+04:00</dc:date>
+        <title>main</title>
+        <link>http://truebsd.org/wiki/doku.php?id=main&amp;rev=1227529086&amp;do=diff</link>
+        <description>Note: if you want to get full access to wiki - write me an email (nulbsd at gmail dot com) with your full name (will be an access info), and language of your translation.
+
+
+
+Беларуская
+
+Дапаможнік карыстальніка
+
+Сьпіс зьменаў TrueBSD 2.0-RC2</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=subversion&amp;rev=1243987256&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-06-03T04:00:56+04:00</dc:date>
+        <title>subversion</title>
+        <link>http://truebsd.org/wiki/doku.php?id=subversion&amp;rev=1243987256&amp;do=diff</link>
+        <description>Get the contents of the directory /truebsd can be performed in the terminal:
+ 
+
+
+
+%svn checkout svn://svn.fireforge.net/svnroot/truebsd
+
+
+Attention: Server is not always as this is my home computer.</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=tmp_be&amp;rev=1226588535&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-13T18:02:15+04:00</dc:date>
+        <title>tmp_be</title>
+        <link>http://truebsd.org/wiki/doku.php?id=tmp_be&amp;rev=1226588535&amp;do=diff</link>
+        <description>&lt;b&gt;Галоўнае новае ў TrueBSD вэрсіі 2.0-RC2:&lt;/b&gt;
+&lt;b&gt;Поўны сьпіс зьменаў:&lt;/b&gt;
+
+&lt;a href=“&lt;http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_changelog_ru&gt;”&gt;ChangeLog 2.0-RC2&lt;/a&gt;
+
+&lt;b&gt;Выявы экранаў:&lt;/b&gt;</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=translation_ru&amp;rev=1221990170&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-09-21T13:42:50+04:00</dc:date>
+        <title>translation_ru</title>
+        <link>http://truebsd.org/wiki/doku.php?id=translation_ru&amp;rev=1221990170&amp;do=diff</link>
+        <description>Доступ к wiki
+
+Чтобы получить доступ для редактирования wiki - напишите мне на e-mail (nullbsd at gmail.com) вашу фамилию и имя на транслите (эти данные будут использоваться для входа на wiki), а также информацию о том, с какого на какой язык вы будете осуществлять перевод.</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_be&amp;rev=1227521186&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-24T13:06:26+04:00</dc:date>
+        <title>truebsd_2.0-rc2_handbook_be</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_be&amp;rev=1227521186&amp;do=diff</link>
+        <description>Пасуе да вэрсіі TrueBSD 2.0-RC2 і ранейшых
+
+
+
+TrueBSD - гэта распрацаваная ў Беларусі аперацыйная сыстэма, якая базуецца на зыходных кодах АС FreeBSD (&lt;http://www.freebsd.org&gt;), ды здольная стартаваць з DVD-дыска, без папярэдняга ўсталяваньня на цьвёрды дыск.
+ Аперацыйная сыстэма ўладкаваная вяликай колькасьцю карысных праграмаў (улучна з KDE, GNOME, OpenOffice.org і г.д.), што дазволяць вам глядзець фільмы, слухаць музыку, працаваць з дакумантамі, ствараць праграмы, працаваць у сетцы Інтэрнэт, …</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_de&amp;rev=1358537536&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2013-01-18T23:32:16+04:00</dc:date>
+        <title>truebsd_2.0-rc2_handbook_de</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_de&amp;rev=1358537536&amp;do=diff</link>
+        <description>Currency: for TrueBSD version 2.0-RC2 and older
+
+
+
+TrueBSD - ist ein Betriebssystem basierend auf FreeBSD-Sourcecode (&lt;http://www.freebsd.org/de&gt;). TrueBSD kann direkt vom DVD-ROM ohne Festplattenunterstützung gestartet werden.
+Das Betriebssystem kommt mit viel nützlicher Software (einschließlich KDE, GNOME, OpenOffice.org etc.) die Ihnen hilft: Filme zu schauen, Musik zu hören, Arbeiten mit Dokumenten, Programme erstellen, im Internet surfen und vieles mehr.
+TrueBSD steht unter der BSD-Lizenz u…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_en&amp;rev=1219833438&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-08-27T14:37:18+04:00</dc:date>
+        <title>truebsd_2.0-rc2_handbook_en</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_en&amp;rev=1219833438&amp;do=diff</link>
+        <description>Currency: for TrueBSD version 2.0-RC2 and older
+
+
+
+TrueBSD is an operating system based on FreeBSD (&lt;http://www.freebsd.org&gt;). It boots from the DVD and works without using a hard drive. 
+There are a lots of usefuls software in operating system (including KDE, GNOME, OpenOffice.org etc.), which helps you: watch video, listen to a music, work with documents, write programs, browse the Internet and many others.
+TrueBSD is distributed under the BSD and included software under its own licenses.</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_ru&amp;rev=1227521022&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-24T13:03:42+04:00</dc:date>
+        <title>truebsd_2.0-rc2_handbook_ru</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_ru&amp;rev=1227521022&amp;do=diff</link>
+        <description>Актуальность: для версии TrueBSD 2.0-RC2 и старше
+
+
+
+TrueBSD - это операционная система, основанная на коде ОС FreeBSD (&lt;http://www.freebsd.org&gt;) и способная загружаться с DVD-диска, без участия вичестера. 
+ Операционная система наделена множеством полезного программного обеспечения (включая KDE, GNOME, OpenOffice.org и т.д.), которое поможет вам: смотреть фильмы, слушать музыку, работать с документами, создавать программы, работать в сети интернет и многое другое.  
+TrueBSD распространяется под…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_ua&amp;rev=1227521311&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-24T13:08:31+04:00</dc:date>
+        <title>truebsd_2.0-rc2_handbook_ua</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0-rc2_handbook_ua&amp;rev=1227521311&amp;do=diff</link>
+        <description>Актуальність: для версії TrueBSD 2.0-RC2 і старіше
+
+
+
+TrueBSD - це операційна система, основана на коді ОС FreeBSD (&lt;http://www.freebsd.org&gt;) і здатна загружатися з DVD-диска, без участі вінчестера. 
+ Операційна система наділена множинністю корисного програмного обезпечення (включаючи KDE, GNOME, OpenOffice.org і т.д.), яке допоможе вам: дивитись фільми, слухати музику, працювати з документами, створювати програми, працювати в мережі інтернет і багато іншого.  
+TrueBSD розповсюджується під ліцен…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_be&amp;rev=1226901753&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-17T09:02:33+04:00</dc:date>
+        <title>truebsd_2.0_rc2_changelog_be</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_be&amp;rev=1226901753&amp;do=diff</link>
+        <description>TrueBSD 2.0-RC2:
+
+	*  Адноўленае сыстэмнае атачэньне ды ядро да FreeBSD 7.1-PRERELEASE;
+	*  Выпраўленыя памылкі ва ўсталёўшчыку сыстэмы (/sysutils/trueinstall), што былі зьнітаваныя з памылковым вызначэньнем накапляльнікаў даньняў;
+	*  Створанае афіцыйнае сховішча subversion (гл. &lt;http://truebsd.org/wiki/doku.php?id=subversion&gt;); 
+	*  Створаны неафіцыйны порт x11-wm/ion-3;
+	*  Створаны авэрлей дрэва портаў;
+	*  Зьмененая ерархія файлавай сыстэмы;
+	*  Створаныя файлы skel, што ўжываюцца дзеля кож…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_de&amp;rev=1226901741&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-17T09:02:21+04:00</dc:date>
+        <title>truebsd_2.0_rc2_changelog_de</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_de&amp;rev=1226901741&amp;do=diff</link>
+        <description>TrueBSD 2.0-RC2:
+
+	*  Updated the system environment and the kernel to FreeBSD 7.1-PRERELEASE;
+	*  Fixed errors in system installer (/sysutils/trueinstall) which were caused by wrong detection storage drives;
+	*  Created an official subversion repository (&lt;http://truebsd.org/wiki/doku.php?id=subversion&gt;); 
+	*  Created a non-official port of x11-wm/ion-3;
+	*  Created an overlay of the ports tree;
+	*  Changed a file system hierarchy;
+	*  Created skel files which are used for each new user;
+	*  Cre…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_en&amp;rev=1226901727&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-17T09:02:07+04:00</dc:date>
+        <title>truebsd_2.0_rc2_changelog_en</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_en&amp;rev=1226901727&amp;do=diff</link>
+        <description>TrueBSD 2.0-RC2:
+
+	*  Updated the system environment and the kernel to FreeBSD 7.0-STABLE;
+	*  Fixed errors in system installer (/sysutils/trueinstall) which were caused by wrong detection storage drives;
+	*  Created an official subversion repository (&lt;http://truebsd.org/wiki/doku.php?id=subversion&gt;); 
+	*  Created a non-official port of x11-wm/ion-3;
+	*  Created an overlay of the ports tree;
+	*  Changed a file system hierarchy;
+	*  Created skel files which are used for each new user;
+	*  Created…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_ru&amp;rev=1226901903&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-17T09:05:03+04:00</dc:date>
+        <title>truebsd_2.0_rc2_changelog_ru</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_ru&amp;rev=1226901903&amp;do=diff</link>
+        <description>TrueBSD 2.0-RC2:
+
+	*  Обновлено системное окружение и ядро до FreeBSD 7.1-PRERELEASE;
+	*  Исправлены ошибки в системном установщике (/sysutils/trueinstall) связанные с неправильным определением накопителей информации;
+	*  Создано официальное subversion-хранилище (см. &lt;http://truebsd.org/wiki/doku.php?id=subversion&gt;); 
+	*  Создан неофициальный порт x11-wm/ion-3;
+	*  Создан оверлей дерева портов
+	*  Изменена иерархия файловой системы
+	*  Созданы skel-файлы, применяемые для каждого новосозданного п…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_ua&amp;rev=1226901773&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-17T09:02:53+04:00</dc:date>
+        <title>truebsd_2.0_rc2_changelog_ua</title>
+        <link>http://truebsd.org/wiki/doku.php?id=truebsd_2.0_rc2_changelog_ua&amp;rev=1226901773&amp;do=diff</link>
+        <description>TrueBSD 2.0-RC2:
+
+	*  Оновлено системне оточення і ядро до FreeBSD 7.1-PRERELEASE;
+	*  Виправлені помилки  в системному установнику (/sysutils/trueinstall) зв'язані з неправельним визначенням накопичувачів інформації;
+	*  Створено офіційне subversion-сховище (див. &lt;http://truebsd.org/wiki/doku.php?id=subversion&gt;); 
+	*  Створено неофіційний порт x11-wm/ion-3;
+	*  Створено оверлей дерева портів;
+	*  Змінена ієрархія файлової системи;
+	*  Створено skel-файли, які застосовуються для кожного новоство…</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=update_truebsd_ru&amp;rev=1238853098&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-04-04T17:51:38+04:00</dc:date>
+        <title>update_truebsd_ru</title>
+        <link>http://truebsd.org/wiki/doku.php?id=update_truebsd_ru&amp;rev=1238853098&amp;do=diff</link>
+        <description>Актуальність: для версії TrueBSD 2.0-RC2 і вище
+
+
+
+1.1 Оновлення вихідних текстів /usr/src
+
+Для виконання всіх дій нам необхідні права доступу root. Заходимо в оболонку адміністратора:</description>
+    </item>
+    <item rdf:about="http://truebsd.org/wiki/doku.php?id=update_truebsd_ua&amp;rev=1227526557&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-24T14:35:57+04:00</dc:date>
+        <title>update_truebsd_ua</title>
+        <link>http://truebsd.org/wiki/doku.php?id=update_truebsd_ua&amp;rev=1227526557&amp;do=diff</link>
+        <description>Актуальность: для версии TrueBSD 2.0-RC2 и старше
+
+
+
+1.1 Обновление исходных текстов /usr/src
+
+Для выполнения всех действий нам необходимы права доступа root. Входим в оболочку администратора:</description>
+    </item>
+</rdf:RDF>

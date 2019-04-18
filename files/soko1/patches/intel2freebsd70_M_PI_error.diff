@@ -1,0 +1,28 @@
+diff -ru mesa.orig/progs/demos/engine.c mesa/progs/demos/engine.c
+--- mesa.orig/progs/demos/engine.c	2008-01-21 14:44:56.000000000 +0000
++++ mesa/progs/demos/engine.c	2008-01-21 14:44:04.000000000 +0000
+@@ -15,6 +15,10 @@
+ #include "readtex.h"
+ #include "trackball.h"
+ 
++#if !M_PI
++#define M_PI 3.14159265358979323846
++#endif
++
+ #define DEG_TO_RAD(DEG)  ((DEG) * M_PI / 180.0)
+ 
+ #define TEXTURE_FILE "../images/reflect.rgb"
+diff -ru mesa.orig/progs/xdemos/corender.c mesa/progs/xdemos/corender.c
+--- mesa.orig/progs/xdemos/corender.c	2008-01-21 14:44:56.000000000 +0000
++++ mesa/progs/xdemos/corender.c	2008-01-21 14:44:04.000000000 +0000
+@@ -25,6 +25,10 @@
+ #include <unistd.h>
+ #include "ipc.h"
+ 
++#if !M_PI
++#define M_PI 3.14159265358979323846
++#endif
++
+ static int MyID = 0;  /* 0 or 1 */
+ static int WindowID = 0;
+ static GLXContext Context = 0;
