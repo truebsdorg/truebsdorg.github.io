@@ -6,226 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://truebsd.pw/en/about</loc>
-  <lastmod>2015-12-15T20:24:54+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://truebsd.pw/en/about</loc>
+  <lastmod>2018-08-09T15:24:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://truebsd.pw/en/releases/2.0rc2</loc>
-  <lastmod>2015-12-15T19:20:55+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://truebsd.pw/en/releases/2.0rc2</loc>
+  <lastmod>2018-08-09T15:24:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://truebsd.pw/en/download</loc>
-  <lastmod>2015-12-15T20:24:39+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://truebsd.pw/en/download</loc>
+  <lastmod>2019-04-18T22:14:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://truebsd.pw/forum/</loc>
-  <lastmod>2015-12-14T12:57:58+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://truebsd.pw/en/authors</loc>
+  <lastmod>2018-08-09T15:24:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://truebsd.pw/en/contacts</loc>
+  <lastmod>2018-08-09T15:24:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>http://truebsd.pw/wiki/</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/en/authors</loc>
-  <lastmod>2015-12-15T20:26:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/en/contacts</loc>
-  <lastmod>2015-12-15T20:37:39+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/be/about</loc>
-  <lastmod>2015-12-15T20:28:42+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/ru/about</loc>
-  <lastmod>2015-12-15T20:27:43+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/en/releases/2.0rc1/handbook</loc>
-  <lastmod>2015-12-15T20:27:01+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/be/releases/2.0rc2</loc>
-  <lastmod>2015-12-15T19:15:26+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/ru/releases/2.0rc2</loc>
-  <lastmod>2015-12-15T19:18:34+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=subversion.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/be/download</loc>
-  <lastmod>2015-12-15T20:28:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/ru/download</loc>
-  <lastmod>2015-12-15T20:27:52+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/index.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_be.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0_rc2_changelog_be.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_ru.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0_rc2_changelog_ru.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=update_truebsd_ru.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=translation_ru.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=devel_ru.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_ua.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0_rc2_changelog_ua.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=bsdl.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=main.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0_rc2_changelog_en.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_de.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/wiki/doku.php%3Fid=truebsd_2.0_rc2_changelog_de.html</loc>
-  <lastmod>2015-12-15T18:57:59+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/be/authors</loc>
-  <lastmod>2015-12-15T20:28:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/ru/authors</loc>
-  <lastmod>2015-12-15T20:27:47+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/be/contacts</loc>
-  <lastmod>2015-12-15T20:35:57+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/ru/contacts</loc>
-  <lastmod>2015-12-15T20:36:18+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/be/releases/2.0rc1/handbook</loc>
-  <lastmod>2015-12-15T20:28:55+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://truebsd.pw/ru/releases/2.0rc1/handbook</loc>
-  <lastmod>2015-12-15T20:28:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
+
+
 </urlset>
