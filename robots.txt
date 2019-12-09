@@ -52,5 +52,5 @@ Disallow: /sokolov/*/*/feed/*/
 Disallow: /sokolov/*/feed
 Disallow: /sokolov/*?*
 Disallow: /sokolov/tag/
-Host: www.truebsd.pw
-Sitemap: http://www.truebsd.pw/sitemap.xml
+Host: www.truebsdorg.github.io
+Sitemap: https://truebsdorg.github.io/sitemap.xml
