@@ -1,0 +1,210 @@
+__Currency__: for TrueBSD version 2.0-RC2 and older
+
+======1. About TrueBSD======
+TrueBSD is an operating system based on FreeBSD (http://www.freebsd.org). It boots from the DVD and works without using a hard drive. 
+There are a lots of usefuls software in operating system (including KDE, GNOME, OpenOffice.org etc.), which helps you: watch video, listen to a music, work with documents, write programs, browse the Internet and many others.
+TrueBSD is distributed under the [[BSDL|BSD]] and included software under its own licenses.
+
+======2. Burning TrueBSD DVD======
+For burning TrueBSD DVD you'll need DVD recorder, empty DVD and program for burning DVD.
+
+If you use FreeBSD (or other *nix operating system), you may use growisofs utility (from the dvd+rw-tools package): 
+
+<code>
+% growisofs -Z /dev/cd0=truebsd.iso
+</code>
+
+In this example /dev/cd0 &ndash; your DVD recorder and truebsd.iso &ndash; image of the TrueBSD DVD.
+
+For burning DVD under the Windows you may use the Infra Recorder ( http://infrarecorder.sourceforge.net ). 
+
+**NB!** you shouldn't unpack the iso and burn it's contents!
+
+======3. Log In======
+When OS boots from the DVD it's not required to enter user's login and password cause the **prelogin** utility will run and offer you next options:
+
+{{http://www.truebsd.org/files/soko1/prelogin.png}}
+
+For further log in the system use login **tuser** and password **tuser**. The superuser's (**root**) password is **root** (use it as a last resort!). 
+
+When graphic manager GDM is loaded (**item 1**), you can choose preferable language and window manager (Gnome, KDE or Xfce are simpler to learn and use). After that you may enter login **tuser** and password **tuser**.
+Other settings (screen resolution, appearance, network) you may configure directly in choosed window manager.
+
+======4. Saving & restoring user's settings======
+For saving and restoring your settings use scripts **saveprofile** (for saving profile) and **restoreprofile** (for restoring profile).
+
+Before using both scripts it's necessary to mount in **/mnt/backup** a drive where the archive with setting will store (the **truebsdprofile.tar** file).
+
+If you need to save current settings and copy them on flash drive then execute:
+
+<code>
+%sudo mount_msdosfs /dev/da0s1 /mnt/backup
+</code>
+
+In the same way this operation is executing for other file sytems (**mount(8)**). 
+Then you should to run script **saveprofile**:
+
+<code>
+%sudo saveprofile
+</code>
+
+After running it the **truebsdprofile.tar** file in **/mnt/backup** directory should be created. 
+Then you may unmount file system with the next command: 
+
+<code>
+%sudo umount /mnt/backup
+</code>
+
+In the same way you can restore the profile. Mount in **/mnt/backup** file system with saved archive and run the **restoreprofile** script:
+
+<code>
+%sudo restoreprofile
+</code>
+
+**Note**: **saveprofile**/**restoreprofile** utilities stores followed directories: 
+
+  * /home/
+  * /etc/
+  * /usr/local/etc/
+  * /usr/local/www/
+
+======5. Installing TrueBSD on the hard drive======
+**Trueinstall** is a tool wich helps you to install TrueBSD on your hard drive.
+
+__NB!__ You'll need at least 7 Gb (10 Gb needed for good working of the system) of the free disk space on your hard drive and a primary (!) partition of the hard drive.
+
+Run the script in the console with root permissions:
+
+<code>
+%sudo trueinstall
+</code>
+
+Then choose more preferable language and follow the instructions **trueinstall**.
+
+======6. System configuration======
+
+=====6.1 Password changing=====
+After installing the system on the hard drive first of all (!) you must change the superuser's password:
+
+<code>
+%sudo passwd root
+</code>
+
+and users' password:
+
+<code>
+%passwd tuser
+</code>
+
+
+=====6.2 Switching off prelogin=====
+For switching of the **prelogin** utility run in the console:
+
+<code>
+%touch ~/.prelogin
+</code>
+
+
+=====6.3 Switching on graphical login manager=====
+For loading graphical login manager (GDM) when system loads, run the next command:
+
+<code>
+%sudo dm_daemon start
+</code>
+
+=====6.4 Detecting new hardware======
+If you've added new hardware (net/audio card, mouse) in **already installed** system and wants to TrueBSD detect it, run the **hwdetect** script:
+
+<code>
+%sudo hwdetect
+</code>
+
+in such window:
+
+{{http://www.truebsd.org/files/soko1/hwdetect.png}}
+
+choose a necessary item.
+
+=====6.5 Adobe (R) Macromedia (R) Flash support======
+For switching on the Adobe (R) Macromedia (R) Flash technology you should run in the console next command:
+
+<code>
+%flashpluginctl on
+</code>
+
+for switching off:
+
+<code>
+%flashpluginctl off
+</code>
+
+__NB!__ All of this actions are applied for current user and it's impossible to set them globally. That's why this actions should be executed for each new user.
+
+
+=====6.6 OpenGL support=====
+To configure OpenGL (only for NVIDIA video chips!) you may try to execute this:
+
+<code>
+%sudo nvidiadrv start
+</code>
+After that press Ctrl+Alt+Backspace.
+
+__NB!__ If TrueBSD doesn't support your video card you should back to previous settings by executing the next command:
+
+<code>
+%sudo nvidiadrv stop
+</code>
+
+=======7. Included software=======
+TrueBSD includes the most useful software both for usual users and for developers and system administrators:
+  * Window managers: KDE3, Gnome, XFCE4, OpenBox, WindowMaker, ion3, wmii, evilwm;
+  * Web-browsers: Seamonkey, Epiphany, Konqueror, Opera, elinks;
+  * Mail/News-clients: Claws-mail, Seamonkey Mail, mutt;
+  * IM/IRC-clients: Pidgin, Gajim, Skype, Kopete, micq;
+  * Utilities for burning CD/DVD: K3b, nautilus-cd-burner;
+  * Audio players: Amarok, Audacious, mpg123, moc, mpc;
+  * Video players: MPlayer (with QT-shell smplayer), Xine, Totem;
+  * File managers: Krusader, Nautilus, Konqueror, Thunar, Midnight Commander (UTF8 support);
+  * Text editors: Emacs, Vim/gVim, Gedit, Geany, Kate;
+  * Text processors: OpenOffice.org Writer, AbiWord;
+  * Math processor: OpenOffice.org Calc, Gnumeric;
+  * Image viewers: Gqview, Kview;
+  * Pdf/djvu/chm readers: Kpdf/Djvulibre/Kchm (correspondingly);
+  * Compilers: GCC;
+  * Interpreters: Perl, Python, PHP, Lua, m4, tcl;
+  * Command interpreters: csh, tcsh, zsh;
+  * Antivirus clamav;
+  * Archivers: arj, zip, unzoo, unrar, unace;
+  * Software for restoring archives;
+  * Win-modems support;
+  * Software for checking different file systems; 
+  * Software for restoring file systems;
+  * Software for testing computer and network;
+  * Apache web-server;
+  * Modules mod_perl, mod_php for web-server;
+  * Net utilities (LAN, modem, Bluetooth, dial-up, VPN, Wireless);
+  * Remote administration (ssh, telnet, rdesktop);
+  * Security scanner nmap;
+  * Firewalls: ipfw, ipf, pf;
+  * FTP clients: ftp, lftp;
+  * Clients for MySQL and PostgreSQL;
+  * Utility for downloading files/sites wget; 
+  * Emulators: qemu, wine, dosbox;
+  * Utilities for audio encoding;
+
+To view the full list of the included software see the **/truebsd/doc/progslist** file. 
+If you need some other software in TrueBSD write me support@TrueBSD and I'll try to include it.
+
+======8.  Bug reporting======
+If you find any bug or other problem while using the TrueBSD please report it: support@TrueBSD.org (include a result of the **version** command) or use our forum: http://www.TrueBSD.org/forum/.
+
+__Note__: Before reporting make sure that you use current version of the TrueBSD (2.0-RC2 or upper).
+
+======9. Contributing======
+If you want to help the project write me an e-mail and I'll answer you as soon as I can. Help may be differently: we need people who will test the OS, write documentation and utilities for it, designers and people who can give a web space for mirrors. 
+That's why if you are talented and want to work on the TrueBSD project, write me. It's more intresting and simple to learn and create something new together.
+
+
+======10. Detailed information======
+TrueBSD is fully compatible with the FreeBSD. So documentation of the FreeBSD is actual for TrueBSD. 
+The best e-book for the moment is the FreeBSD handbook which you can find at **/truebsd/doc/freebsd/handbook/** (in Russian and English) or on the FreeBSD website (http://www.freebsd.org/doc/ru_RU.KOI8-R/books/handbook/).

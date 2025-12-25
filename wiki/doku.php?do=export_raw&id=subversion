@@ -1,0 +1,7 @@
+Get the contents of the directory /truebsd can be performed in the terminal:
+ 
+<code>
+%svn checkout svn://svn.fireforge.net/svnroot/truebsd
+</code>
+
+__Attention__: Server is not always as this is my home computer.

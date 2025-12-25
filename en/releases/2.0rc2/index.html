@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Release notes (2.0-RC2) | TrueBSD Project</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/files/nista_favicon.png" type="image/x-icon" />
+  <style type="text/css" media="all">@import "/css/4a6292572a2b2634726c67c452481d20.css";</style>
+  </head>
+
+<body class="bd">
+
+<div id="container" class="clear-block">
+	<div id="header" class="clear-block">
+		<a href="/index.html" title="Home">
+				<img src="/files/nista_logo.png" alt="Home" />
+				</a>
+	</div>
+	<div id="nav">
+      <ul class="links" id="navlist"><li  class="first menu-1-1-2"><a href="/about" class="menu-1-1-2">About</a></li>
+<li  class="menu-1-2-2"><a href="/2.0rc2" class="menu-1-2-2">Release notes</a></li>
+<li  class="menu-1-3-2"><a href="/download" class="menu-1-3-2">Download</a></li>
+<li  class="menu-1-4-2"><a href="https://truebsdorg.github.io/forum" class="menu-1-4-2">Forum</a></li>
+<li  class="menu-1-5-2"><a href="https://truebsdorg.github.io/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html" class="menu-1-5-2">Handbook</a></li>
+<li  class="menu-1-6-2"><a href="https://truebsdorg.github.io/wiki" class="menu-1-6-2">Wiki</a></li>
+<li  class="menu-1-7-2"><a href="/authors" class="menu-1-7-2">Authors</a></li>
+<li  class="last menu-1-8-2"><a href="/contacts" class="menu-1-8-2">Contacts</a></li>
+</ul>	</div>
+			<div id="topShadow"></div>
+
+
+	<div id="contentArea">
+		
+
+				<div id="sidebarLeft">
+			<div id="block-translation-0" class="block block-translation">
+
+  <h3>Languages</h3>
+
+  <div class="content"><div class="item-list"><ul><li><span class="i18n-link"><a href="../../be/node/46"><img src="https://truebsdorg.github.io/modules/i18n/flags/be.png"  class="i18n-icon" width="16" height="12" alt="Belarusian" /></a>&nbsp;<a href="../../be/node/46">Беларуская</a></span></li><li><span class="i18n-link"><a href="2.0rc2" class="active"><img src="https://truebsdorg.github.io/modules/i18n/flags/en.png"  class="i18n-icon" width="16" height="12" alt="English" /></a>&nbsp;<a href="2.0rc2" class="active">English</a></span></li><li><span class="i18n-link"><a href="../../ru/node/46"><img src="https://truebsdorg.github.io/modules/i18n/flags/ru.png"  class="i18n-icon" width="16" height="12" alt="Russian" /></a>&nbsp;<a href="../../ru/node/46">Русский</a></span></li></ul></div></div>
+</div><div id="block-block-6" class="block block-block">
+
+
+  <div class="content"><p><a href="http://cryptopunks.org">Author's blog</a></p>
+</div>
+</div>		</div>
+			
+		<div id="mainContentSidebarLeft" class="">
+        <h1 id="title">Release notes (2.0-RC2)</h1>
+
+        <div class="tabs"></div>
+                        
+<div id="node-46" class="node">
+
+
+
+  
+  <div class="content">
+    <p><b>In TrueBSD 2.0-RC2 you can find:</b></p>
+<p>* Updated the system environment and the kernel to FreeBSD 7.1-PRERELEASE;<br />
+* Fixed errors in system installer (/sysutils/trueinstall) which were caused by wrong detection storage drives;<br />
+* Created an official subversion repository (<a href="../../wiki/doku.php%3Fid=subversion.html" title="https://truebsdorg.github.io/wiki/doku.php%3Fid=subversion.html">https://truebsdorg.github.io/wiki/doku.php%3Fid=subversion.html</a>);<br />
+* Created a non-official port of x11-wm/ion-3;<br />
+* Created an overlay of the ports tree;<br />
+* Changed a file system hierarchy;<br />
+* Created skel files which are used for each new user;<br />
+* Created a ports tree with patched versions of the software;<br />
+* Created a kernel module snd_hda_hack.ko for additional Intel audio cards support;<br />
+* Script /sysutils/apachemanager for managing the Apache web-server;<br />
+* Script /sysutils/hwdetect for new hardware automatic detection;<br />
+* Script /sysutils/snddetect for new audio cards detection;<br />
+* Script /sysutils/ifdetect for net cards detection;<br />
+* Script /sysutils/flashpluginctl for switching on/off the Adobe (R) Macromedia (R) Flash technology;<br />
+* Script /sysutils/getoperalang for Opera translational files installation;<br />
+* Script /sysutils/kblayout for choosing keyboard layout and switching method;<br />
+* New Prompt for the zsh shell;<br />
+* Rewrote the prelogin system utility with using the cdialog. Added new items in menu;<br />
+* Rewrote newtconf script for net configuration with using the sysinstall functionality;<br />
+* Removed function for creating core files for programs which was stopped with segmentation fault;<br />
+* Removed createbzip, extractbzip, formatfloppy, termfont system utilities;<br />
+* Removed all net- and audio cards drivers from the kernel and putted to separate kernel modules;<br />
+* Created a nice highlighting for the system console and kernel messages;<br />
+* Updated all software;</p>
+<p><b>Screenshots:</b></p>
+<p><a href="../../files/truebsd-2.0rc2_gnome.png" title="https://truebsdorg.github.io/files/truebsd-2.0rc2_gnome.png">https://truebsdorg.github.io/files/truebsd-2.0rc2_gnome.png</a><br />
+<a href="../../files/truebsd-2.0rc2_kde.png" title="https://truebsdorg.github.io/files/truebsd-2.0rc2_kde.png">https://truebsdorg.github.io/files/truebsd-2.0rc2_kde.png</a></p>
+<p><b>Ordering:</b></p>
+<p>You can find information about ordering or downloading <a href="../download">here</a>.</p>
+<p><b>User's Guide:</b></p>
+<p>User's Guide TrueBSD 2.0-RC2 can be found at:<br />
+<a href="../../wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html">https://truebsdorg.github.io/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html</a></p>
+<p><b>Bug tracking:</b></p>
+<p>If you have found bug(s) in TrueBSD 2.0-RC2 please contact me in <a href="https://truebsdorg.github.io/forum/index.php?topic=2655">this<br />
+topic</a> or via e-mail to <a href="mailto:nullbsd@gmail.com">nullbsd at gmail dot com</a>.</p>
+<p><b>Contributing:</b></p>
+<p>If you would like to host a mirror of TrueBSD ISO image (2Gb) on your server, please contact <a href="mailto:nullbsd@gmail.com">nullbsd at gmail dot com</a>, or post a reply in the forum topic <a href="https://truebsdorg.github.io/forum/index.php?topic=2662">here</a>. Thank you.</p>
+  </div>
+
+  <!--<div class="clear-block clear">-->
+	<div class="">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>        <br class="clearfloat" />
+	</div>
+	<br class="clearfloat" />
+
+	<div id="footer">
+		<div class="wrapper"><center>
+	<p>&copy; 2006 — 2015 <a href="https://truebsdorg.github.io">TrueBSD Project</a><br>
+</p></center>
+  		</div>
+	</div>
+</div>
+</body>
+</html>

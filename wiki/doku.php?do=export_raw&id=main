@@ -1,0 +1,38 @@
+__Note__: if you want to get full access to wiki - write me an email (nulbsd at gmail dot com) with your full name (will be an access info), and language of your translation.
+
+======Available languages======
+=====Беларуская=====
+[[truebsd_2.0-rc2_handbook_be|Дапаможнік карыстальніка]]
+
+[[truebsd_2.0_rc2_changelog_be|Сьпіс зьменаў TrueBSD 2.0-RC2]]
+
+=====Русский=====
+[[truebsd_2.0-rc2_handbook_ru|Руководство пользователя]]
+
+[[truebsd_2.0_rc2_changelog_ru|Список изменений TrueBSD 2.0-RC2]]
+
+[[update_truebsd_ru|Самостоятельное обновление системы TrueBSD]]
+
+[[translation_ru|Информация для переводчиков]] /* доступ к wiki и перевод */
+
+[[devel_ru|Информация для разработчиков]]
+
+[[testing_ru|Информация для тестировщиков]]
+
+=====Українська=====
+[[truebsd_2.0-rc2_handbook_ua|Посібник користувача]]
+
+[[truebsd_2.0_rc2_changelog_ua|Список змін TrueBSD 2.0-RC2]]
+
+=====English=====
+[[truebsd_2.0-rc2_handbook_en|User's guide TrueBSD]]
+
+[[truebsd_2.0_rc2_changelog_en|ChangeLog TrueBSD 2.0-RC2]]
+
+=====Deutsch=====
+[[truebsd_2.0-rc2_handbook_de|TrueBSD Benutzerhandbuch]]
+
+[[truebsd_2.0_rc2_changelog_de|Liste der Änderungen in TrueBSD 2.0-RC2]]
+
+======Developers======
+[[subversion|Subversion repository]]

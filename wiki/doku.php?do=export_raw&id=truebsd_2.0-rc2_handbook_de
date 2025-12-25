@@ -1,0 +1,203 @@
+__Currency__: for TrueBSD version 2.0-RC2 and older
+
+====== 1. Über TrueBSD ======
+TrueBSD - ist ein Betriebssystem basierend auf FreeBSD-Sourcecode (http://www.freebsd.org/de). TrueBSD kann direkt vom DVD-ROM ohne Festplattenunterstützung gestartet werden.
+Das Betriebssystem kommt mit viel nützlicher Software (einschließlich KDE, GNOME, OpenOffice.org etc.) die Ihnen hilft: Filme zu schauen, Musik zu hören, Arbeiten mit Dokumenten, Programme erstellen, im Internet surfen und vieles mehr.
+TrueBSD steht unter der BSD-Lizenz und die Software, die mitgeliefert wird, unter den entsprechenden eigenen Lizenzen.
+
+
+====== 2. TrueBSD auf DVD brennen ======
+Zum Erstellen der TrueBSD-DVD benötigen Sie einen DVD-Brenner-Laufwerk, eine leere DVD und ein Programm zum Brennen der DVD.
+Wenn Sie mit FreeBSD (oder ein anderes Betriebssystem der *nix-Familie) benutzen, dann nutzen Sie z.B. growisofs (aus dem Paket dvd+rw-tools):
+
+<code>
+% growisofs -Z /dev/cd0=truebsd.iso
+</code>
+
+In diesem Beispiel steht **/dev/cd0** für den DVD-Brenner und muß u.U. angepasst werden, **truebsd.iso** ist die TrueBSD Image-Datei.
+Unter Windows, können Sie Infra Recorder (http://infrarecorder.sourceforge.net) zum Brennen der DVD benutzen.
+
+__Hinweis:__ Man sollte das ISO-Image nicht auspacken und brennen!
+
+====== 3. Login ======
+Wird TrueBSD von der DVD gebootet, sind Benutzername und Passwort nicht erforderlich. Das Programm **prelogin** bietet die folgenden Optionen an:
+
+{{http://www.truebsd.org/files/soko1/prelogin.png}}
+
+Bei weiteren Logins benutzt man als Usernamen **tuser** und als Passwort **tuser**. Das Superuser-Passwort von **root** lautet **root** (nur im Ausnahmefall benutzen!). 
+
+Wenn der Login-Manager GDM geladen wird (**Auswahl 1**), kann man die gewünschte Sprache und Window-Manager (Gnome, KDE oder Xfce sind einfacher zum Erlernen und Benutzen) auswählen. Hiernach kann man sich nun mit login **tuser** und Passwort **tuser** einloggen.
+Andere Einstellungen (Bildschirmauflösung, Aussehen und Netzwerkeinstellungen) können dann direkt beim ausgewählten Window-Manager eingestellt werden.
+
+====== 4. Speichern und Wiederherstellen der Benutzer-Einstellungen ======
+Um Ihre Einstellungen zu speichern benutzen Sie das Skript **saveprofile** zum Speichern des Profils und **restoreprofile** zum Wiederherstellen des Profils.
+Bevor beide Skripte ausgeführt werden können, muß im Verzeichnis **/mnt/backup** z.B. ein USB-Medium angemeldet werden, auf dem die Einstellungen gespeichert werden. Dies geschieht im einem tar-Archiv (Datei: **truebsdprofile.tar**).
+Um die aktuellen Einstellungen auf einem USB-Stick zu speichern, wird der USB-Stick (in diesem Beispiel /dev/da0s1) wie folgt angemeldet:
+
+<code>
+%sudo mount_msdosfs /dev/da0s1 /mnt/backup
+</code>
+
+Es ist auch möglich andere Dateisystemarten (als msdosfs) anzumelden. Weitere Informationen finden Sie unter **mount(8)**.
+Dann führt man das Skript **saveprofile** aus:
+
+<code>
+%sudo saveprofile
+</code>
+
+Es wird dann die Datei **truebsdprofile.tar** in das Verzeichnis **/mnt/backup/** auf dem angemeldetem Medium erstellt.
+Dann wird das Medium mit dem umount-Befehl wieder abgemeldet:
+
+<code>
+%sudo umount /mnt/backup
+</code>
+
+Beim Wiederherstellungs-Vorgang wird im Verzeichnis **/mnt/backup/** das Backupmedium mit früheren Einstellungen wie oben angemeldet und dann das Skript **restoreprofile** ausgeführt:
+
+<code>
+%sudo restoreprofile
+</code>
+
+__Hinweis:__ Die Skripte **saveprofile** und **restoreprofile** Sichern bzw. Stellen folgende Verzeichnisse wieder her:
+
+  * /home/
+  * /etc/
+  * /usr/local/etc/
+  * /usr/local/www/
+
+====== 5. TrueBSD auf der Festplatte installieren ======
+Mit **Trueinstall** können Sie TrueBSD auf Ihrer Festplatte Installieren.
+Zur Installation von TrueBSD wird ein Minimum von 7 GB (um sinnvoll Arbeiten zu könnnen sind 10 GB erforderlich) freien Speicherplatz auf der Festplatte und eine freie Festplatten-Partition benötigt.
+Führen Sie das folgende Skript aus der Konsole mit root-Rechten aus:
+
+<code>
+%sudo trueinstall
+</code>
+
+Dann wählen Sie die gewünschte Sprache aus und folgen Sie den Anweisungen von trueinstall.
+
+====== 6. System Konfiguration ======
+
+===== 6.1 Password ändern =====
+Nach der Installation des Betriebssystems auf der Festplatte ist als erstes erforderlich, das root-Passwort zu ändern:
+
+<code>
+%sudo passwd root
+</code>
+
+und das Passwort des Benutzers:
+
+<code>
+%passwd tuser
+</code>
+
+
+===== 6.2 prelogin deaktivieren =====
+Um **prelogin** auszuschalten muß man folgendes in der Konsole eingeben:
+
+<code>
+%touch ~/.prelogin
+</code>
+
+
+===== 6.3 Grafischen-Login-Manager aktivieren =====
+Nach dem Start für den Grafischen-Login-Manager (GDM) den folgenden Befehl eingeben:
+
+<code>
+%sudo dm_daemon start
+</code>
+
+===== 6.4 Neue Hardware erkennen ======
+Wenn Sie ein neues Gerät (Netzwerk, Soundkarte, Maus) mit einem bereits auf der Festplatte installiertem System verbunden haben, lassen Sie das folgende Skript ausführen, um die neuen Geräte von TrueBSD erkennen zu lassen:
+
+<code>
+%sudo hwdetect
+</code>
+
+In dem Fenster, das angezeigt wird, wählen Sie den entsprechenden Menüpunkt.
+
+{{http://www.truebsd.org/files/soko1/hwdetect.png}}
+
+
+===== 6.5 Adobe (R) Macromedia (R) Flash Unterstützung ======
+Um Adobe (R) Macromedia (R) Flash zu aktivieren, führt man in der Konsole folgendes Kommando aus:
+
+<code>
+%flashpluginctl on
+</code>
+
+Zum Ausschalten:
+
+<code>
+%flashpluginctl off
+</code>
+
+__Hinweis:__ Alle diese Aktionen wirken sich für den aktuellen Benutzer aus. Es ist unmöglich die Einstellungen global vorzunehmen. Aus diesem Grund müssen die Einstellungen für jeden weiteren Benutzer extra vorgenommen werden.
+
+
+===== 6.6 OpenGL-Unterstützung =====
+Um OpenGL (nur für Grafikkarten mit NVIDIA-Chip!) zu nutzen, können Sie folgendes versuchen:
+
+<code>
+%sudo nvidiadrv start
+</code>
+
+Dann drücken Sie die Tasten-Kombination von Strg+Alt+Rücktaste.
+Wenn Ihre Grafikkarte nicht von TrueBSD unterstützt wird, geben sie folgendes ein:
+
+<code>
+%sudo nvidiadrv stop
+</code>
+
+
+=======7. Auf der DVD enthaltene Anwendungen =======
+TrueBSD enthält häufig benötigte Anwendungen für den normalen Anwender, für Entwickler und Administratoren:
+  * Window-Manager: KDE3, Gnome, XFCE4, OpenBox, WindowMaker, ion3, wmii, evilwm
+  * Web-Browser: Seamonkey, Epiphany, Konqueror, Opera, elinks
+  * Mail/News-Clients: Claws-mail, Seamonkey Mail, mutt
+  * IM/IRC-clients: Pidgin, Gajim, Skype, Kopete, micq
+  * Werkzeuge zum Brennen von CD und DVD: K3b, nautilus-cd-burner
+  * Audio-Player: Amarok, Audacious, mpg123, moc, mpc
+  * Video-Player: MPlayer (with QT-shell smplayer), Xine, Totem
+  * File-Manager: Krusader, Nautilus, Konqueror, Thunar, Midnight Commander (mit UTF8-Unterstützung)
+  * Text Editoren: Emacs, Vim/gVim, Gedit, Geany, Kate
+  * Textverarbeitung: OpenOffice.org Writer, AbiWord
+  * Mathematische Verarbeitung: OpenOffice.org, Calc, Gnumeric
+  * Bildbetrachter: Gqview, Kview
+  * Pdf/djvu/chm Anzeiger: Kpdf/Djvulibre/Kchm (correspondingly)
+  * Compiler: GCC
+  * Interpreter/Sprachen: Perl, Python, PHP, Lua, m4, tcl
+  * Commandline Unterpreter: csh, tcsh, zsh
+  * Antivirusprogramme: clamav
+  * Archiver: arj, zip, unzoo, unrar, unace
+  * Software zum Wiederherstellen von Archiven
+  * Win-Modem Unterstützung
+  * Software zum Überprüfen von verschiedenen Dateisystemen
+  * Software zum Wiederherstellen von Dateisystemen
+  * Software zum Testen von Computern und Netzwerk
+  * Apache Web-Server
+  * Module für Web-Server: mod_perl, mod_php
+  * Netzwerk-Werkzeuge (LAN, modem, Bluetooth, dial-up, VPN, Wireless)
+  * Ferngesteuerte Administration: ssh, telnet, rdesktop
+  * Security-Scanner: nmap
+  * Firewall: ipfw, ipf, pf
+  * FTP-Clients: ftp, lftp
+  * Clients für MySQL und PostgreSQL
+  * Werkzeuge zum Herunterladen von Dateien/Web-Sites: wget
+  * Emulatoren: qemu, wine, dosbox
+  * Werkzeuge zum Encoden von Audio
+
+Eine komplette Liste aller verfügbaren Programmen, findet man in der Datei **/truebsd/doc/progslist**. Wenn Sie ein Programm in TrueBSD nicht finden, schreiben Sie an: support@TrueBSD.org und ich werde versuchen, in den künftigen Versionen die gewünschte Software zu integrieren.
+
+====== 8. Fehler melden ======
+Wenn Sie unter TrueBSD irgendwo einen Fehler oder Defekt finden, melden Sie ihn bitte bei support@TrueBSD.org (geben Sie bitte in der E-Mail die Ausgabe des Befehls **/sysutils/version** an) oder im Forum: http://www.TrueBSD.org/forum/.
+
+__Hinweis:__ Stellen Sie bitte vorher sicher, dass Ihre Version TrueBSD dem aktuellen (2.0-RC2 oder neuer) entspricht.
+
+
+====== 9. Mitarbeit =====
+Wenn Sie beim Projekt helfen möchten, schreiben Sie mir eine E-Mail. Ich werde so bald wie möglich antworten. Ihre Hilfe kann vielfältig sein: Leute, die das Betriebssystem testen, das Schreiben von Dokumentation und Utilities beherrschen. Auf einem ftp-Server spiegeln. In der Regel reicht es, mit einigem Talent und Wille mit zuwirken. Denn zusammen ist es interessanter und leichter zu lernen und etwas Neues zu schaffen.
+
+
+====== 10. Detailierte Informationen ======
+TrueBSD ist voll kompatibel mit FreeBSD ⇒ Die Dokumentation für FreeBSD gilt auch für TrueBSD. Die beste Einführung auf neuestem Stand ist ein Handbuch über FreeBSD. Sie finden das Handbuch kann in das Verzeichnis: **/truebsd/doc/FreeBSD/handbook/** (in russisch und englisch) oder in deutsch auf der FreeBSD-Website http://www.freebsd.org/doc/de_DE.ISO8859-1/books/handbook/.

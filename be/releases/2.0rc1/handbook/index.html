@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="be" xml:lang="be">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Handbook (for 2.0-RC1) | TrueBSD Project</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/files/nista_favicon.png" type="image/x-icon" />
+  <style type="text/css" media="all">@import "/css/4a6292572a2b2634726c67c452481d20.css";</style>
+  </head>
+
+<body class="bd">
+
+<div id="container" class="clear-block">
+	<div id="header" class="clear-block">
+		<a href="/index.html" title="Home">
+				<img src="/files/nista_logo.png" alt="Home" />
+				</a>
+	</div>
+	<div id="nav">
+      <ul class="links" id="navlist"><li  class="first menu-1-1-2"><a href="/about" class="menu-1-1-2">Пра прадукт</a></li>
+<li  class="menu-1-2-2"><a href="../2.0rc2" class="menu-1-2-2">Пра рэліз</a></li>
+<li  class="menu-1-3-2"><a href="/download" class="menu-1-3-2">Спампаваць</a></li>
+<li  class="menu-1-4-2"><a href="https://truebsdorg.github.io/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_be.html" class="menu-1-4-2"> Дапаможнік</a></li>
+<li  class="menu-1-5-2"><a href="https://truebsdorg.github.io/forum/" class="menu-1-5-2">Форум</a></li>
+<li  class="menu-1-6-2"><a href="https://truebsdorg.github.io/wiki" class="menu-1-6-2">Wiki</a></li>
+<li  class="menu-1-7-2"><a href="/authors" class="menu-1-7-2">Аўтары</a></li>
+<li  class="last menu-1-8-2"><a href="/contacts" class="menu-1-8-2">Кантакты</a></li>
+</ul>	</div>
+			<div id="topShadow"></div>
+
+
+	<div id="contentArea">
+		
+
+				<div id="sidebarLeft">
+			<div id="block-translation-0" class="block block-translation">
+
+  <h3>Languages</h3>
+
+  <div class="content"><div class="item-list"><ul><li><span class="i18n-link"><a href="handbook" class="active"><img src="https://truebsdorg.github.io/modules/i18n/flags/be.png"  class="i18n-icon" width="16" height="12" alt="Belarusian" /></a>&nbsp;<a href="handbook" class="active">Беларуская</a></span></li><li><span class="i18n-link"><a href="/en/releases/2.0rc1/handbook"><img src="https://truebsdorg.github.io/modules/i18n/flags/en.png"  class="i18n-icon" width="16" height="12" alt="English" /></a>&nbsp;<a href="/en/releases/2.0rc1/handbook">English</a></span></li><li><span class="i18n-link"><a href="/ru/releases/2.0rc1/handbook"><img src="https://truebsdorg.github.io/modules/i18n/flags/ru.png"  class="i18n-icon" width="16" height="12" alt="Russian" /></a>&nbsp;<a href="/ru/releases/2.0rc1/handbook">Русский</a></span></li></ul></div></div>
+</div><div id="block-block-6" class="block block-block">
+
+
+  <div class="content"><p><a href="http://cryptopunks.org">Author's blog</a></p>
+</div>
+</div>		</div>
+			
+		<div id="mainContentSidebarLeft" class="">
+        <h1 id="title">Handbook (for 2.0-RC1)</h1>
+
+        <div class="tabs"></div>
+                        
+<div id="node-23" class="node">
+
+
+
+  
+  <div class="content">
+    <h2>Content:</h2>
+<dt>1. <a href="handbook#ABOUT">About</a></dt>
+<dt>2. <a href="handbook#PRE">Intro</a></dt>
+<dt>3. <a href="handbook#WRITECD">Burning DVD</a></dt>
+<dt>4. <a href="handbook#LOGINSYSTEM">Log In</a></dt>
+<dt>5. <a href="handbook#CONFSYS">Configuring the system</a></dt>
+<dt>6. <a href="handbook#PROFILE">Saving &amp; restoring user's settings</a></dt>
+<dt>7. <a href="handbook#INSTALLHDD">Installing TrueBSD on the hard drive</a></dt>
+<dt>8. <a href="handbook#ABOUTPROG">Included software </a></dt>
+<dt>9. <a href="handbook#FINDBUGS">Bug reporting</a></dt>
+<dt>10. <a href="handbook#COORDINATE">Contribution</a></dt>
+<dt>11. <a href="handbook#ETCDOCS">Detailed info</a></dt>
+<p><br></p>
+<h2><a id="ABOUT">1. About TrueBSD</a></h2>
+<p>TrueBSD is an operating system based on FreeBSD (<a href="http://freebsd.org" title="http://freebsd.org">http://freebsd.org</a>) with useful software (KDE, GNOME, OpenOffice etc.) wich helps you: watch video, listen to a music, work with documents, write programs, browse the Internet and many others. It boots from the DVD and works without using a hard drive.<br />
+TrueBSD is distributed under the BSD license (see '/truebsd/doc/copyright' for details) and included software under its own licenses.</p>
+<h2><a id="PRE">2. Intro </a></h2>
+<p>I had a task in my university and couldn't decide what I'll develop for a while. Then I decided to develop TrueBSD cause I like FreeBSD and know it.<br />
+I think that some people may be in situation when they need a configured *BSD-system but they can't install it on a computer (e.g. a computer on work running on W**dows). So I have a good motivation.<br />
+After the realization the task for the university I decided to continue developing TrueBSD and even my death won't stop me :). </p>
+<h2><a id="WRITECD">3. Burning DVD </a></h2>
+<p>For burning TrueBSD DVD you'll need DVD recorder, empty DVD and program for burning DVD.<br />
+If you use FreeBSD (or other *nix operating system), you may use growisofs utility (from the dvd+rw-tools package): </p>
+<p>#growisofs -Z /dev/cd0=truebsd.iso</p>
+<p>In this example /dev/cd0 - your DVD recorder and truebsd.iso - image of the TrueBSD DVD.</p>
+<h2><a id="LOGINSYSTEM">4. Log In</a></h2>
+<p>For log in the system use 'tuser' username and 'tuser' password. The superuser's (root) password is 'root' (use it as a last resort!).<br />
+When OS boots from the DVD you don't need username and password cause the prelogin utility loads (/sysutils/prelogin) and proposes such variants:</p>
+<p>    1. Load graphic interface<br />
+    2. Back to system console<br />
+    3. Reboot<br />
+    4. Turn off</p>
+<p>If you choose the first item the automatic configuration of your videocard and monitor will run. After that the GDM graphic manager will load.</p>
+<h2><a id="#CONFSYS">5. Configuring the system</a></h2>
+<p>After loading the GDM graphic manager you can choose preferable language and window manager (Gnome, KDE and Xfce are more easily in learning and configuring). Then you can enter username ('tuser') and password ('tuser').<br />
+All other settings (screen resolution, appearance, network) you can set directly in chosen window manager.<br />
+For configuring the firewall you may use the pfw utility (ports/security/pfw). For using the pfw you'll need to run the Apache web-server: </p>
+<p>%sudo sh /usr/local/etc/rc.d/apache22 forcestart'</p>
+<p>open your browser (e.g. firefox) and enter in adress bar: <a href="http://localhost/pfw/" title="http://localhost/pfw/">http://localhost/pfw/</a></p>
+<h2><a id="PROFILE">6. Saving &amp; restoring user's settings</a></h2>
+<p>To save your profile use the /sysutils/saveprofile script. For restoring the profile run the /sysutils/restoreprofile script.<br />
+Before using both scripts it's necessary to mount in `/mnt/backup` a drive where the archive with setting will store (the truebsdprofile.tar file).<br />
+It's very simple. If you need to save current settings and copy them on flash drive then execute:</p>
+<p>%sudo mount_msdosfs /dev/da0s1 /mnt/backup</p>
+<p>In the same way this operation is executing for other file sytems (mount(8)).<br />
+Then you should run script /sysutils/saveprofile:</p>
+<p>%sudo saveprofile</p>
+<p>After running it the `truebsdprofile.tar` file in `/mnt/backup` directory should be created. Then you may unmount file system with the next command: </p>
+<p>%sudo umount /mnt/backup</p>
+<p>In the same way you can restore the profile. Mount in `/mnt/backup` file system with saved archive and run the /sysutils/restoreprofile script:</p>
+<p>%sudo restoreprofile</p>
+<p>Note: saveprofile/restoreprofiles stores followed directories: </p>
+<p> * /home/<br />
+ * /etc/<br />
+ * /usr/local/etc/<br />
+ * /usr/X11R6/etc/<br />
+ * /usr/local/www/</p>
+<h2><a id="INSTALLHDD">7. Installing TrueBSD on the hard drive</a></h2>
+<p>Trueinstall is the tool wich helps you to install TrueBSD on your hard drive.<br />
+ NB! You'll need at least 7 Gb (10 Gb needed for good working of the system) of the free disk space on your hard drive and a primary partition of the hard drive.<br />
+Run the scrtipt in the console:</p>
+<p> $sudo trueinstall </p>
+<p>Then choose more preferable language and follow the instructions.<br />
+After the istallation OS first of all you should change superuser's password:</p>
+<p>%sudo passwd root</p>
+<p>and user's password:</p>
+<p>%passwd tuser </p>
+<p>If the prelogin utility disturbs you each time when you authorise, run in console:</p>
+<p>%touch ~/.prelogin</p>
+<p>For the GDM automatic launching, execute the next command:</p>
+<p>%sudo dm_daemon start</p>
+<p>For OpenGL configuring (only for NVidia videocards!) try this: </p>
+<p>%sudo nvidiadrv start</p>
+<p>And press Ctrl+Alt+Backspace.<br />
+If module nvidia.ko (OS TrueBSD, in other words) doesn't support your videocard restore previous settings with the next command:</p>
+<p>%sudo nvidiadrv stop</p>
+<h2><a id="ABOUTPROG">8. Included software</a></h2>
+<p>TrueBSD includes the most useful software both for usual users and for developers and system administrators:</p>
+<p> * Browsers: Firefox, Seamonkey, Epiphany, Konqueror, Opera, elinks;<br />
+ * Mail/News clients: Claws-mail, Seamonkey Mail, mutt;<br />
+ * IM/IRC clients: Pidgin, Gajim, Skype, Kopete, micq;<br />
+ * Utilities for burning CD/DVD: K3b, nautilus-cd-burner;<br />
+ * Audioplayers: Amarok, Audacious, mpg123, moc, mpc;<br />
+ * Videoplayers: mplayer (with the gtk2 shell: gMplayer), Xine, Totem;<br />
+ * File managers: Nautilus, Konqueror, Thunar, Midnight Commander (mc);<br />
+ * Text editors: Emacs, Vim/gVim, Gedit, Mousepad, nvi, ee, ed;<br />
+ * Text processors: OpenOffice.org Writer, AbiWord;<br />
+ * Math processors: OpenOffice.org Calc, Gnumeric;<br />
+ * Image viewers: Gqview, Kview;<br />
+ * Pdf/djvu/chm readers: Kpdf/Djvulibre/Kchm (correspondingly);<br />
+ * Compilers: C/С++, Fortran, Java and NASM;<br />
+ * Interpreters: Perl, Python, PHP, Lua, m4, tcl;<br />
+ * Command interpreters: csh, tcsh, zsh;<br />
+ * Antivirus: clamav;<br />
+ * Archivers: zip, bzip2, gzip, unzoo, unrar, unace;<br />
+ * Software for restoring archives;<br />
+ * Win-modems support;<br />
+ * Software for checking different file systems;<br />
+ * Software for restoring file systems;<br />
+ * Software for testing computer and network;<br />
+ * Web-server Apache;<br />
+ * Modules mod_perl, mod_php for web-server;<br />
+ * Net utilities (LAN, modem, Bluetooth, dial-up, VPN, Wireless);<br />
+ * Remote administration (ssh, telnet, rdesktop);<br />
+ * Security scanner nmap;<br />
+ * Firewalls: ipfw, ipf, pf;<br />
+ * FTP clients: ftp, lftp;<br />
+ * MySQL and PosgreSQL clients;<br />
+ * Utility for downloading files wget;<br />
+ * Emulators: qemu, wine;<br />
+ * Utilities for audio encoding;<br />
+ * Window managers: KDE3, Gnome, xfce4, Beryl/Compiz, ion3, wmii3, evilwm;</p>
+<p>To view the full list of the included software see the '/truebsd/doc/progslist' file.<br />
+If you need some other software in TrueBSD write me <nullbsd at gmail dot com> and I'll try to include it.</p>
+<h2><a id="FINDBUGS">9. Bug reporting</a></h2>
+<p>If you find any bug or other problem while using the TrueBSD please report it:  <a href="mailto:nullbsd@gmail.com">nullbsd at gmail dot com</a> (include a result of the `/sysutils/version` command) or use our forum: <a href="https://truebsdorg.github.io/forum/" title="https://truebsdorg.github.io/forum/">https://truebsdorg.github.io/forum/</a>.<br />
+Note: before reporting make sure that you use current version of the TrueBSD (2.0-RC1 or upper).</p>
+<h2><a id="COORDINATE">10. Contributing</a></h2>
+<p>If you want to help the project write me an e-mail and I'll answer you as soon as I can. Help may be differently: we need people who will test the OS, write documentation and utilities for it, designers and people who can give a web space for mirrors.<br />
+That's why if you are talented and want to work on the TrueBSD project, write me. It's more intresting and simple to learn and create something new together.</p>
+<h2><a id="ETCDOCS">11. Detailed info.</a></h2>
+<p>TrueBSD is fully compatible with the FreeBSD. So documentation of the FreeBSD is actual for TrueBSD.<br />
+The best e-book for the moment is the FreeBSD handbook wich you can find at /truebsd/doc/freebsd/handbook/' (in Russian and English).</p>
+  </div>
+
+  <!--<div class="clear-block clear">-->
+	<div class="">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>        <br class="clearfloat" />
+	</div>
+	<br class="clearfloat" />
+
+	<div id="footer">
+		<div class="wrapper"><center>
+	<p>&copy; 2006 — 2015 <a href="https://truebsdorg.github.io">TrueBSD Project</a><br>
+</p></center>
+  		</div>
+	</div>
+</div>
+</body>
+</html>

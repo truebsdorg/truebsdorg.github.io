@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    truebsd_2.0-rc2_handbook_en    [TrueBSD Project]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2013-01-18T14:32:16-0500" />
+<meta name="keywords" content="truebsd_2.0-rc2_handbook_en" />
+<link rel="search" type="application/opensearchdescription+xml" href="lib/exe/opensearch.php" title="TrueBSD Project" />
+<link rel="start" href="index.html" />
+<link rel="contents" href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en&amp;do=index.html" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="feed.php%3Fmode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="doku.php%3Fdo=export_xhtml&amp;id=truebsd_2.0-rc2_handbook_en.html" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="doku.php%3Fdo=export_raw&amp;id=truebsd_2.0-rc2_handbook_en" />
+<link rel="stylesheet" media="all" type="text/css" href="lib/exe/css.php%3Fs=all&amp;t=default.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="lib/exe/css.php%3Ft=default.css" />
+<link rel="stylesheet" media="print" type="text/css" href="lib/exe/css.php%3Fs=print&amp;t=default.css" />
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php%3Fedit=0&amp;write=0" ></script>
+
+  <link rel="shortcut icon" href="lib/tpl/default/images/favicon.ico" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en&amp;do=backlink.html"  title="Backlinks">truebsd_2.0-rc2_handbook_en</a>]]
+      </div>
+      <div class="logo">
+        <a href="index.html"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">TrueBSD Project</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+        <form class="button btn_source" method="post" action="index.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [V]" /></div></form>        <form class="button btn_revs" method="get" action="index.html"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="index.html"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="index.html" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_be.html"  class="breadcrumbs" title="truebsd_2.0-rc2_handbook_be">truebsd_2.0-rc2_handbook_be</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=truebsd_2.0_rc2_changelog_be.html"  class="breadcrumbs" title="truebsd_2.0_rc2_changelog_be">truebsd_2.0_rc2_changelog_be</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_ru.html"  class="breadcrumbs" title="truebsd_2.0-rc2_handbook_ru">truebsd_2.0-rc2_handbook_ru</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=truebsd_2.0_rc2_changelog_ru.html"  class="breadcrumbs" title="truebsd_2.0_rc2_changelog_ru">truebsd_2.0_rc2_changelog_ru</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=update_truebsd_ru.html"  class="breadcrumbs" title="update_truebsd_ru">update_truebsd_ru</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=translation_ru.html"  class="breadcrumbs" title="translation_ru">translation_ru</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=devel_ru.html"  class="breadcrumbs" title="devel_ru">devel_ru</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_ua.html"  class="breadcrumbs" title="truebsd_2.0-rc2_handbook_ua">truebsd_2.0-rc2_handbook_ua</a> <span class="bcsep">&raquo;</span> <a href="doku.php%3Fid=truebsd_2.0_rc2_changelog_ua.html"  class="breadcrumbs" title="truebsd_2.0_rc2_changelog_ua">truebsd_2.0_rc2_changelog_ua</a> <span class="bcsep">&raquo;</span> <span class="curid"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html"  class="breadcrumbs" title="truebsd_2.0-rc2_handbook_en">truebsd_2.0-rc2_handbook_en</a></span>          </div>
+    
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#about_truebsd" class="toc">1. About TrueBSD</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#burning_truebsd_dvd" class="toc">2. Burning TrueBSD DVD</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#log_in" class="toc">3. Log In</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#saving_restoring_user_s_settings" class="toc">4. Saving &amp; restoring user&#039;s settings</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#installing_truebsd_on_the_hard_drive" class="toc">5. Installing TrueBSD on the hard drive</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#system_configuration" class="toc">6. System configuration</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#password_changing" class="toc">6.1 Password changing</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#switching_off_prelogin" class="toc">6.2 Switching off prelogin</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#switching_on_graphical_login_manager" class="toc">6.3 Switching on graphical login manager</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#detecting_new_hardware" class="toc">6.4 Detecting new hardware</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#adobe_r_macromedia_r_flash_support" class="toc">6.5 Adobe (R) Macromedia (R) Flash support</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#opengl_support" class="toc">6.6 OpenGL support</a></span></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#included_software" class="toc">7. Included software</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#bug_reporting" class="toc">8.  Bug reporting</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#contributing" class="toc">9. Contributing</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#detailed_information" class="toc">10. Detailed information</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<em class="u">Currency</em>: for TrueBSD version 2.0-RC2 and older
+</p>
+
+
+
+<h1><a name="about_truebsd" id="about_truebsd">1. About TrueBSD</a></h1>
+<div class="level1">
+
+<p>
+TrueBSD is an operating system based on FreeBSD (<a href="http://www.freebsd.org" class="urlextern" title="http://www.freebsd.org"  rel="nofollow">http://www.freebsd.org</a>). It boots from the DVD and works without using a hard drive. 
+There are a lots of usefuls software in operating system (including KDE, GNOME, OpenOffice.org etc.), which helps you: watch video, listen to a music, work with documents, write programs, browse the Internet and many others.
+TrueBSD is distributed under the <a href="doku.php%3Fid=bsdl.html" class="wikilink1" title="bsdl">BSD</a> and included software under its own licenses.
+</p>
+
+</div>
+
+<h1><a name="burning_truebsd_dvd" id="burning_truebsd_dvd">2. Burning TrueBSD DVD</a></h1>
+<div class="level1">
+
+<p>
+For burning TrueBSD DVD you&#039;ll need DVD recorder, empty DVD and program for burning DVD.
+</p>
+
+<p>
+If you use FreeBSD (or other *nix operating system), you may use growisofs utility (from the dvd+rw-tools package): 
+</p>
+<pre class="code">
+% growisofs -Z /dev/cd0=truebsd.iso
+</pre>
+
+<p>
+In this example /dev/cd0 &amp;ndash; your DVD recorder and truebsd.iso &amp;ndash; image of the TrueBSD DVD.
+</p>
+
+<p>
+For burning DVD under the Windows you may use the Infra Recorder ( <a href="http://infrarecorder.sourceforge.net" class="urlextern" title="http://infrarecorder.sourceforge.net"  rel="nofollow">http://infrarecorder.sourceforge.net</a> ). 
+</p>
+
+<p>
+<strong>NB!</strong> you shouldn&#039;t unpack the iso and burn it&#039;s contents!
+</p>
+
+</div>
+
+<h1><a name="log_in" id="log_in">3. Log In</a></h1>
+<div class="level1">
+
+<p>
+When <acronym title="Operating System">OS</acronym> boots from the DVD it&#039;s not required to enter user&#039;s login and password cause the <strong>prelogin</strong> utility will run and offer you next options:
+</p>
+
+<p>
+<a href="lib/exe/fetch.php%3Fmedia=http:%252F%252Fwww.truebsd.org%252Ffiles%252Fsoko1%252Fprelogin.png" class="media" title="http://www.truebsd.org/files/soko1/prelogin.png"><img src="lib/exe/fetch.php%3Fmedia=http:%252F%252Fwww.truebsd.org%252Ffiles%252Fsoko1%252Fprelogin.png" class="media" alt="" /></a>
+</p>
+
+<p>
+For further log in the system use login <strong>tuser</strong> and password <strong>tuser</strong>. The superuser&#039;s (<strong>root</strong>) password is <strong>root</strong> (use it as a last resort!). 
+</p>
+
+<p>
+When graphic manager GDM is loaded (<strong>item 1</strong>), you can choose preferable language and window manager (Gnome, KDE or Xfce are simpler to learn and use). After that you may enter login <strong>tuser</strong> and password <strong>tuser</strong>.
+Other settings (screen resolution, appearance, network) you may configure directly in choosed window manager.
+</p>
+
+</div>
+
+<h1><a name="saving_restoring_user_s_settings" id="saving_restoring_user_s_settings">4. Saving &amp; restoring user&#039;s settings</a></h1>
+<div class="level1">
+
+<p>
+For saving and restoring your settings use scripts <strong>saveprofile</strong> (for saving profile) and <strong>restoreprofile</strong> (for restoring profile).
+</p>
+
+<p>
+Before using both scripts it&#039;s necessary to mount in <strong>/mnt/backup</strong> a drive where the archive with setting will store (the <strong>truebsdprofile.tar</strong> file).
+</p>
+
+<p>
+If you need to save current settings and copy them on flash drive then execute:
+</p>
+<pre class="code">
+%sudo mount_msdosfs /dev/da0s1 /mnt/backup
+</pre>
+
+<p>
+In the same way this operation is executing for other file sytems (<strong>mount(8)</strong>). 
+Then you should to run script <strong>saveprofile</strong>:
+</p>
+<pre class="code">
+%sudo saveprofile
+</pre>
+
+<p>
+After running it the <strong>truebsdprofile.tar</strong> file in <strong>/mnt/backup</strong> directory should be created. 
+Then you may unmount file system with the next command: 
+</p>
+<pre class="code">
+%sudo umount /mnt/backup
+</pre>
+
+<p>
+In the same way you can restore the profile. Mount in <strong>/mnt/backup</strong> file system with saved archive and run the <strong>restoreprofile</strong> script:
+</p>
+<pre class="code">
+%sudo restoreprofile
+</pre>
+
+<p>
+<strong>Note</strong>: <strong>saveprofile</strong>/<strong>restoreprofile</strong> utilities stores followed directories: 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> /home/</div>
+</li>
+<li class="level1"><div class="li"> /etc/</div>
+</li>
+<li class="level1"><div class="li"> /usr/local/etc/</div>
+</li>
+<li class="level1"><div class="li"> /usr/local/www/</div>
+</li>
+</ul>
+
+</div>
+
+<h1><a name="installing_truebsd_on_the_hard_drive" id="installing_truebsd_on_the_hard_drive">5. Installing TrueBSD on the hard drive</a></h1>
+<div class="level1">
+
+<p>
+<strong>Trueinstall</strong> is a tool wich helps you to install TrueBSD on your hard drive.
+</p>
+
+<p>
+<em class="u">NB!</em> You&#039;ll need at least 7 Gb (10 Gb needed for good working of the system) of the free disk space on your hard drive and a primary (!) partition of the hard drive.
+</p>
+
+<p>
+Run the script in the console with root permissions:
+</p>
+<pre class="code">
+%sudo trueinstall
+</pre>
+
+<p>
+Then choose more preferable language and follow the instructions <strong>trueinstall</strong>.
+</p>
+
+</div>
+
+<h1><a name="system_configuration" id="system_configuration">6. System configuration</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="password_changing" id="password_changing">6.1 Password changing</a></h2>
+<div class="level2">
+
+<p>
+After installing the system on the hard drive first of all (!) you must change the superuser&#039;s password:
+</p>
+<pre class="code">
+%sudo passwd root
+</pre>
+
+<p>
+and users&#039; password:
+</p>
+<pre class="code">
+%passwd tuser
+</pre>
+
+</div>
+
+<h2><a name="switching_off_prelogin" id="switching_off_prelogin">6.2 Switching off prelogin</a></h2>
+<div class="level2">
+
+<p>
+For switching of the <strong>prelogin</strong> utility run in the console:
+</p>
+<pre class="code">
+%touch ~/.prelogin
+</pre>
+
+</div>
+
+<h2><a name="switching_on_graphical_login_manager" id="switching_on_graphical_login_manager">6.3 Switching on graphical login manager</a></h2>
+<div class="level2">
+
+<p>
+For loading graphical login manager (GDM) when system loads, run the next command:
+</p>
+<pre class="code">
+%sudo dm_daemon start
+</pre>
+
+</div>
+
+<h2><a name="detecting_new_hardware" id="detecting_new_hardware">6.4 Detecting new hardware</a></h2>
+<div class="level2">
+
+<p>
+If you&#039;ve added new hardware (net/audio card, mouse) in <strong>already installed</strong> system and wants to TrueBSD detect it, run the <strong>hwdetect</strong> script:
+</p>
+<pre class="code">
+%sudo hwdetect
+</pre>
+
+<p>
+in such window:
+</p>
+
+<p>
+<a href="lib/exe/fetch.php%3Fmedia=http:%252F%252Fwww.truebsd.org%252Ffiles%252Fsoko1%252Fhwdetect.png" class="media" title="http://www.truebsd.org/files/soko1/hwdetect.png"><img src="lib/exe/fetch.php%3Fmedia=http:%252F%252Fwww.truebsd.org%252Ffiles%252Fsoko1%252Fhwdetect.png" class="media" alt="" /></a>
+</p>
+
+<p>
+choose a necessary item.
+</p>
+
+</div>
+
+<h2><a name="adobe_r_macromedia_r_flash_support" id="adobe_r_macromedia_r_flash_support">6.5 Adobe (R) Macromedia (R) Flash support</a></h2>
+<div class="level2">
+
+<p>
+For switching on the Adobe (R) Macromedia (R) Flash technology you should run in the console next command:
+</p>
+<pre class="code">
+%flashpluginctl on
+</pre>
+
+<p>
+for switching off:
+</p>
+<pre class="code">
+%flashpluginctl off
+</pre>
+
+<p>
+<em class="u">NB!</em> All of this actions are applied for current user and it&#039;s impossible to set them globally. That&#039;s why this actions should be executed for each new user.
+</p>
+
+</div>
+
+<h2><a name="opengl_support" id="opengl_support">6.6 OpenGL support</a></h2>
+<div class="level2">
+
+<p>
+To configure OpenGL (only for NVIDIA video chips!) you may try to execute this:
+</p>
+<pre class="code">
+%sudo nvidiadrv start
+</pre>
+
+<p>
+
+After that press Ctrl+Alt+Backspace.
+</p>
+
+<p>
+<em class="u">NB!</em> If TrueBSD doesn&#039;t support your video card you should back to previous settings by executing the next command:
+</p>
+<pre class="code">
+%sudo nvidiadrv stop
+</pre>
+
+</div>
+
+<h1><a name="included_software" id="included_software">7. Included software</a></h1>
+<div class="level1">
+
+<p>
+TrueBSD includes the most useful software both for usual users and for developers and system administrators:
+</p>
+<ul>
+<li class="level1"><div class="li"> Window managers: KDE3, Gnome, XFCE4, OpenBox, WindowMaker, ion3, wmii, evilwm;</div>
+</li>
+<li class="level1"><div class="li"> Web-browsers: Seamonkey, Epiphany, Konqueror, Opera, elinks;</div>
+</li>
+<li class="level1"><div class="li"> Mail/News-clients: Claws-mail, Seamonkey Mail, mutt;</div>
+</li>
+<li class="level1"><div class="li"> IM/<acronym title="Internet Relay Chat">IRC</acronym>-clients: Pidgin, Gajim, Skype, Kopete, micq;</div>
+</li>
+<li class="level1"><div class="li"> Utilities for burning CD/DVD: K3b, nautilus-cd-burner;</div>
+</li>
+<li class="level1"><div class="li"> Audio players: Amarok, Audacious, mpg123, moc, mpc;</div>
+</li>
+<li class="level1"><div class="li"> Video players: MPlayer (with QT-shell smplayer), Xine, Totem;</div>
+</li>
+<li class="level1"><div class="li"> File managers: Krusader, Nautilus, Konqueror, Thunar, Midnight Commander (UTF8 support);</div>
+</li>
+<li class="level1"><div class="li"> Text editors: Emacs, Vim/gVim, Gedit, Geany, Kate;</div>
+</li>
+<li class="level1"><div class="li"> Text processors: OpenOffice.org Writer, AbiWord;</div>
+</li>
+<li class="level1"><div class="li"> Math processor: OpenOffice.org Calc, Gnumeric;</div>
+</li>
+<li class="level1"><div class="li"> Image viewers: Gqview, Kview;</div>
+</li>
+<li class="level1"><div class="li"> Pdf/djvu/chm readers: Kpdf/Djvulibre/Kchm (correspondingly);</div>
+</li>
+<li class="level1"><div class="li"> Compilers: GCC;</div>
+</li>
+<li class="level1"><div class="li"> Interpreters: <acronym title="Practical Extraction and Report Language">Perl</acronym>, Python, <acronym title="Hypertext Preprocessor">PHP</acronym>, Lua, m4, tcl;</div>
+</li>
+<li class="level1"><div class="li"> Command interpreters: csh, tcsh, zsh;</div>
+</li>
+<li class="level1"><div class="li"> Antivirus clamav;</div>
+</li>
+<li class="level1"><div class="li"> Archivers: arj, zip, unzoo, unrar, unace;</div>
+</li>
+<li class="level1"><div class="li"> Software for restoring archives;</div>
+</li>
+<li class="level1"><div class="li"> Win-modems support;</div>
+</li>
+<li class="level1"><div class="li"> Software for checking different file systems; </div>
+</li>
+<li class="level1"><div class="li"> Software for restoring file systems;</div>
+</li>
+<li class="level1"><div class="li"> Software for testing computer and network;</div>
+</li>
+<li class="level1"><div class="li"> Apache web-server;</div>
+</li>
+<li class="level1"><div class="li"> Modules mod_perl, mod_php for web-server;</div>
+</li>
+<li class="level1"><div class="li"> Net utilities (LAN, modem, Bluetooth, dial-up, VPN, Wireless);</div>
+</li>
+<li class="level1"><div class="li"> Remote administration (ssh, telnet, rdesktop);</div>
+</li>
+<li class="level1"><div class="li"> Security scanner nmap;</div>
+</li>
+<li class="level1"><div class="li"> Firewalls: ipfw, ipf, pf;</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="File Transfer Protocol">FTP</acronym> clients: ftp, lftp;</div>
+</li>
+<li class="level1"><div class="li"> Clients for MySQL and PostgreSQL;</div>
+</li>
+<li class="level1"><div class="li"> Utility for downloading files/sites wget; </div>
+</li>
+<li class="level1"><div class="li"> Emulators: qemu, wine, dosbox;</div>
+</li>
+<li class="level1"><div class="li"> Utilities for audio encoding;</div>
+</li>
+</ul>
+
+<p>
+
+To view the full list of the included software see the <strong>/truebsd/doc/progslist</strong> file. 
+If you need some other software in TrueBSD write me support@TrueBSD and I&#039;ll try to include it.
+</p>
+
+</div>
+
+<h1><a name="bug_reporting" id="bug_reporting">8.  Bug reporting</a></h1>
+<div class="level1">
+
+<p>
+If you find any bug or other problem while using the TrueBSD please report it: support@TrueBSD.org (include a result of the <strong>version</strong> command) or use our forum: <a href="http://www.TrueBSD.org/forum/" class="urlextern" title="http://www.TrueBSD.org/forum/"  rel="nofollow">http://www.TrueBSD.org/forum/</a>.
+</p>
+
+<p>
+<em class="u">Note</em>: Before reporting make sure that you use current version of the TrueBSD (2.0-RC2 or upper).
+</p>
+
+</div>
+
+<h1><a name="contributing" id="contributing">9. Contributing</a></h1>
+<div class="level1">
+
+<p>
+If you want to help the project write me an e-mail and I&#039;ll answer you as soon as I can. Help may be differently: we need people who will test the <acronym title="Operating System">OS</acronym>, write documentation and utilities for it, designers and people who can give a web space for mirrors. 
+That&#039;s why if you are talented and want to work on the TrueBSD project, write me. It&#039;s more intresting and simple to learn and create something new together.
+</p>
+
+</div>
+
+<h1><a name="detailed_information" id="detailed_information">10. Detailed information</a></h1>
+<div class="level1">
+
+<p>
+TrueBSD is fully compatible with the FreeBSD. So documentation of the FreeBSD is actual for TrueBSD. 
+The best e-book for the moment is the FreeBSD handbook which you can find at <strong>/truebsd/doc/freebsd/handbook/</strong> (in Russian and English) or on the FreeBSD website (<a href="http://www.freebsd.org/doc/ru_RU.KOI8-R/books/handbook/" class="urlextern" title="http://www.freebsd.org/doc/ru_RU.KOI8-R/books/handbook/"  rel="nofollow">http://www.freebsd.org/doc/ru_RU.KOI8-R/books/handbook/</a>).
+
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        truebsd_2.0-rc2_handbook_en.txt &middot; Last modified: 18-01-2013 (14:32) (external edit)      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <form class="button btn_source" method="post" action="index.html"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [V]" /></div></form>        <form class="button btn_revs" method="get" action="index.html"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                        <form class="button btn_login" method="get" action="index.html"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="4ce226334a441f2a8d9af7ccd8c7eba9" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Login" class="button" title="Login" /></div></form>        <form class="button btn_index" method="get" action="index.html"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="truebsd_2.0-rc2_handbook_en" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>        <a class="nolink" href="doku.php%3Fid=truebsd_2.0-rc2_handbook_en.html#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+  <div class="license">Except where otherwise noted, content on this wiki is licensed under the following license:<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license" class="urlextern">CC Attribution-Noncommercial-Share Alike 3.0 Unported</a></div>
+</div>
+<div class="footerinc">
+<br> 
+<a  href="feed.php" title="Recent changes RSS feed"><img src="lib/tpl/default/images/button-rss.png" width="80" height="15" alt="Recent changes RSS feed" /></a>
+
+        <a  href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license" title="CC Attribution-Noncommercial-Share Alike 3.0 Unported"><img src="lib/images/license/button/cc-by-nc-sa.png" width="80" height="15" alt="" /></a>
+  
+  <a  href="http://www.dokuwiki.org/donate" title="Donate"><img src="lib/tpl/default/images/button-donate.gif" alt="Donate" width="80" height="15" /></a>
+
+  <a  href="http://www.php.net" title="Powered by PHP"><img src="lib/tpl/default/images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
+
+  <a  href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="lib/tpl/default/images/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" /></a>
+
+  <a  href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="lib/tpl/default/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
+
+  <a  href="http://dokuwiki.org/" title="Driven by DokuWiki"><img src="lib/tpl/default/images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
+
+
+
+</div>
+
+<div class="no"><img src="lib/exe/indexer.php%3Fid=truebsd_2.0-rc2_handbook_en&amp;1450205877" width="1" height="1" alt=""  /></div>
+</body>
+</html>

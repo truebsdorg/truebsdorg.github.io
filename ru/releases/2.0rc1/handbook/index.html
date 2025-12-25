@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Руководство пользователя | TrueBSD Project</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/files/nista_favicon.png" type="image/x-icon" />
+  <style type="text/css" media="all">@import "/css/4a6292572a2b2634726c67c452481d20.css";</style>
+  </head>
+
+<body class="bd">
+
+<div id="container" class="clear-block">
+	<div id="header" class="clear-block">
+		<a href="/index.html" title="Главная">
+				<img src="/files/nista_logo.png" alt="Главная" />
+				</a>
+	</div>
+	<div id="nav">
+      <ul class="links" id="navlist"><li  class="first menu-1-1-2"><a href="../../about" class="menu-1-1-2">О продукте</a></li>
+<li  class="menu-1-2-2"><a href="/ru/2.0rc2" class="menu-1-2-2">О релизе</a></li>
+<li  class="menu-1-3-2"><a href="/ru/download" class="menu-1-3-2">Скачать</a></li>
+<li  class="menu-1-4-2"><a href="https://truebsdorg.github.io/wiki" class="menu-1-4-2">Wiki</a></li>
+<li  class="menu-1-5-2"><a href="https://truebsdorg.github.io/wiki/doku.php%3Fid=truebsd_2.0-rc2_handbook_ru.html" class="menu-1-5-2">Руководство</a></li>
+<li  class="menu-1-6-2"><a href="https://truebsdorg.github.io/forum/" class="menu-1-6-2">Форум</a></li>
+<li  class="menu-1-7-2"><a href="/ru//authors" class="menu-1-7-2">Авторы</a></li>
+<li  class="last menu-1-8-2"><a href="/ru/contacts" class="menu-1-8-2">Контакты</a></li>
+</ul>	</div>
+			<div id="topShadow"></div>
+
+
+	<div id="contentArea">
+		
+
+				<div id="sidebarLeft">
+			<div id="block-translation-0" class="block block-translation">
+
+  <h3>Languages</h3>
+
+  <div class="content"><div class="item-list"><ul><li><span class="i18n-link"><a href="../../../be/node/13"><img src="https://truebsdorg.github.io/modules/i18n/flags/be.png"  class="i18n-icon" width="16" height="12" alt="Belarusian" /></a>&nbsp;<a href="../../../be/node/13">Беларуская</a></span></li><li><span class="i18n-link"><a href="../../../en/node/13"><img src="https://truebsdorg.github.io/modules/i18n/flags/en.png"  class="i18n-icon" width="16" height="12" alt="English" /></a>&nbsp;<a href="../../../en/node/13">English</a></span></li><li><span class="i18n-link"><a href="handbook" class="active"><img src="https://truebsdorg.github.io/modules/i18n/flags/ru.png"  class="i18n-icon" width="16" height="12" alt="Russian" /></a>&nbsp;<a href="handbook" class="active">Русский</a></span></li></ul></div></div>
+</div><div id="block-block-6" class="block block-block">
+
+
+  <div class="content"><p><a href="http://cryptopunks.org">Author's blog</a></p>
+</div>
+</div>		</div>
+			
+		<div id="mainContentSidebarLeft" class="">
+        <h1 id="title">Руководство пользователя</h1>
+
+        <div class="tabs"></div>
+                        
+<div id="node-13" class="node">
+
+
+
+  
+  <div class="content">
+    <h2>Содержание:</h2>
+<dt>1. <a href="handbook#ABOUT">О TrueBSD</a></dt>
+<dt>2. <a href="handbook#PRE">Предисловие</a></dt>
+<dt>3. <a href="handbook#WRITECD">Запись TrueBSD на диск</a></dt>
+<dt>4. <a href="handbook#LOGINSYSTEM">Вход в систему</a></dt>
+<dt>5. <a href="handbook#CONFSYS">Настройка системы</a></dt>
+<dt>6. <a href="handbook#PROFILE">Сохранение и восстановление настроек пользователя</a></dt>
+<dt>7. <a href="handbook#INSTALLHDD">Установка TrueBSD на жесткий диск</a></dt>
+<dt>8. <a href="handbook#ABOUTPROG">О поставляемом ПО</a></dt>
+<dt>9. <a href="handbook#FINDBUGS">Найденные проблемы</a></dt>
+<dt>10. <a href="handbook#COORDINATE">Сотрудничество</a></dt>
+<dt>11. <a href="handbook#ETCDOCS">Более подробная документация</a></dt>
+<p><br></p>
+<h2><a id="ABOUT">1. О TrueBSD</a></h2>
+<p>TrueBSD - это операционная система, основанная на коде ОС FreeBSD (<a href="http://www.freebsd.org" title="http://www.freebsd.org">http://www.freebsd.org</a>), которая способна загружаться с DVD-диска, без участия жёсткого диска на Вашем компьютере.<br />
+Операционная система наделена множеством полезного программного обеспечения (KDE, GNOME, OpenOffice.org и т.д.), которое поможет вам: смотреть фильмы, слушать музыку, работать с документами, создавать программы, работать в сети интернет и многое другое.</p>
+<p>TrueBSD распространяется под лицензией BSD (смотрите файл '/truebsd/doc/COPYRIGHT'), а ПО поставляемое с ней - по своим собственным лицензиям.</p>
+<h2><a id="PRE">2. Предисловие</a></h2>
+<p>Идея написания TrueBSD у меня возникла в связи с курсовой работой. Долго я не мог определиться с тем, что выполнить в качестве курсовой. Остановился на ОС FreeBSD, т.к. я ее очень люблю и хорошо знаком с ней.<br />
+Ведь часто можно столкнуться с ситуацией, когда нужна рабочая и настроенная *BSD-система, а устанавливать ее на компьютер нет возможности. Поэтому это все послужило хорошим стимулом для разработки.<br />
+После сдачи курсовой я и дальше решил разрабатывать этот программный продукт.</p>
+<h2><a id="WRITECD">3. Запись TrueBSD на диск</a></h2>
+<p>Для записи диска с TrueBSD вам понадобится пишущий dvd-привод, чистый dvd-диск и программа для записи dvd-дисков. </p>
+<p>Если вы работаете под ОС FreeBSD (либо любой другой ОС семейства *nix), то для записи диска подойдет утилита growisofs (из пакета dvd+rw-tools): </p>
+<p># growisofs -Z /dev/cd0=truebsd.iso</p>
+<p>где /dev/cd0 - имя устройства вашего пишущего DVD-привода, а truebsd.iso - имя файла образа TrueBSD. </p>
+<p>Для записи диска под ОС Windows можно прибегнуть к  Infra Recorder (<a href="http://infrarecorder.sourceforge.net/">http://infrarecorder.sourceforge.net/</a>). </p>
+<p>NB! распаковывать архиватором и записывать содержимое iso-файла не нужно!</p>
+<h2><a id="LOGINSYSTEM">4. Вход в систему</a></h2>
+<p>Для входа в систему используйте имя пользователя 'tuser' и пароль 'tuser'. Пароль суперпользователя (root) - 'root' (к нему необходимо прибегать только в крайних случаях!).</p>
+<p>При загрузки ОС с диска ввод имени пользователя и пароля не потребуется, т.к. запустится утилита prelogin (/sysutils/prelogin) и предложит вам следующие варианты работы:</p>
+<p>1. Загрузить графический интерфейс<br />
+2. Вернуться в системную консоль<br />
+3. Перезагрузить компьютер<br />
+4. Выключить компьютер</p>
+<p>Если вы выберите первый пункт - произведется автоматическая настройка вашей видеокарты и монитора, после чего загрузится графический менеджер GDM.</p>
+<h2><a id="CONFSYS">5. Настройка системы</a></h2>
+<p>При загрузке графического менеджера входа в систему GDM можно будет выбрать выбрать более подходящий для вас язык (Language) и оконный менеджер (проще в усвоении и настройке - Gnome, KDE, либо Xfce), после чего можно ввести имя (tuser) и пароль (tuser).<br />
+Все остальные настройки (разрешение экрана, внешний вид, сеть) можно настроить непосредственно в выбранном вами ранее оконном менеджере.</p>
+<p>Для удобной настройки фаерволла можно прибегнуть к утилите pfw (ports/security/pfw). Для её использования вам необходимо запустить веб-сервер Apache:<br />
+%sudo sh /usr/local/etc/rc.d/apache22 forcestart'<br />
+открыть любой удобный для вас браузер (например firefox) и ввести в строке адреса: <a href="http://localhost/pfw/" title="http://localhost/pfw/">http://localhost/pfw/</a></p>
+<h2><a id="PROFILE">6. Сохранение и восстановление настроек пользователя</a></h2>
+<p>Для сохранения и восстанавления ваших настроек воспользуйтесь скриптами /sysutils/saveprofile (для сохранения профиля) и /sysutils/restoreprofile (для его восстановления).</p>
+<p>Перед использованием обеих скриптов необходимо смонтировать в каталог '/mnt/backup' носитель, на котором хранится (либо будет храниться) архив с настройками (файл: "truebsdprofile.tar").</p>
+<p>Если вам необходимо сохранить текущие настройки и поместить их на flash-диск, то выполните:</p>
+<p>%sudo mount_msdosfs /dev/da0s1 /mnt/backup</p>
+<p>Аналогично операция монтирования  выполяется и для других файловых систем (mount(8)).<br />
+Далее запустите скрипт /sysutils/saveprofile:</p>
+<p>%sudo saveprofile</p>
+<p>После его выполнения должен появиться файл 'truebsdprofile.tar' в каталоге '/mnt/backup/'.<br />
+После чего файловую систему можно размонтировать командой:</p>
+<p>%sudo umount /mnt/backup</p>
+<p>Точно также производится операция восстановление. Смонтируйте в каталоге "/mnt/backup/" файловую систему с сохраненным ранее архивом настроек и запустите скрипт restoreprofile: </p>
+<p>%sudo restoreprofile</p>
+<p><b>Примечание:</b> Утилиты saveprofile/restoreprofile сохраняют/восстанавливают следующие каталоги:</p>
+<pre>
+   * /home/
+   * /etc/
+   * /usr/local/etc/
+   * /usr/local/www/</pre><h2><a id="INSTALLHDD">7. Установка (и настройка) TrueBSD на жесткий диск</a></h2>
+<p>Trueinstall - это инструмент, который поможет вам установить TrueBSD на ваш жесткий диск.</p>
+<p>NB! Для установки TrueBSD необходимо минимум 7 Гб (для хорошей работы есть смысл выделить 10 Гб) свободного дискового пространства и основной (!) раздел винчестера.</p>
+<p>Запустите скрипт в консоли с правами администратора:</p>
+<p>$sudo trueinstall</p>
+<p>После чего выберите более удобный для вас язык и следуйте инструкциям trueinstall.</p>
+<p>После установки ОС на жёсткий диск в первую очередь (!) необходим поменять пароль суперпользователя:</p>
+<p>%sudo passwd root</p>
+<p>и пользователя:</p>
+<p>%passwd tuser</p>
+<p>Для того чтобы утилита prelogin не раздражала вас каждый раз при авторизации в системе - выполните в консоли:</p>
+<p>%touch ~/.prelogin</p>
+<p>Чтобы графический менеджер входа в систему (GDM) стартовал сразу при загрузке - выполните команду:</p>
+<p>%sudo dm_daemon start</p>
+<p>Для настройки OpenGL (только для видеокарт на чипе NVIDIA!) можно попробовать выполнить следующее:</p>
+<p>%sudo nvidiadrv start</p>
+<p>После чего нажать сочетание клавишь Ctrl+Alt+Backspace.<br />
+Если всё же выявилось что ваша карта не поддерживается модулем nvidia.ko (проще говоря ОС TrueBSD), верните прежние параметры, выполнив:</p>
+<p>%sudo nvidiadrv stop</p>
+<h2><a id="ABOUTPROG">8. О поставляемом ПО</a></h2>
+<p>TrueBSD включает в себя самое необходимое ПО, как для обычных пользователей, так и для разработчиков с администраторами:</p>
+<p>  * Веб-браузеры Firefox, Seamonkey, Epiphany, Konqueror, Opera, elinks;<br />
+  * Mail/News-клиент Claws-mail, Seamonkey Mail, mutt;<br />
+  * IM/IRC-клиенты Pidgin, Gajim, Skype, Kopete, micq;<br />
+  * Утилиты для записи CD/DVD: K3b, nautilus-cd-burner;<br />
+  * Аудиоплееры Amarok, Audacious, mpg123, moc, mpc;<br />
+  * Видеоплееры mplayer (с оболочкой на gtk2: gMplayer), Xine, Totem;<br />
+  * Файловые менеджеры Nautilus, Konqueror, Thunar, Midnight Commander (mc);<br />
+  * Текстовые редакторы Emacs, Vim/gVim, Gedit, Mousepad, nvi, ee, ed;<br />
+  * Текстовый процессор OpenOffice.org Writer, AbiWord;<br />
+  * Математический процессор: OpenOffice.org Calc, Gnumeric;<br />
+  * Программы просмотра рисунков: Gqview, Kview;<br />
+  * Программы просмотра pdf/djvu/chm файлов - Kpdf/Djvulibre/Kchm (соответственно);<br />
+  * Компиляторы C/С++, Fortran, Java и NASM;<br />
+  * Интерпретаторы Perl, Python, PHP, Lua, m4, tcl;<br />
+  * Командные  интерпретаторы csh, tcsh, zsh;<br />
+  * Антивирус clamav;<br />
+  * Архиваторы arj, zip, unzoo, unrar, unace;<br />
+  * Программы восстановления архивов;<br />
+  * Поддержка win-модемов;<br />
+  * Программы для проверки файловых систем разного типа;<br />
+  * Программы по восстановлению файловых систем;<br />
+  * Программы для тестирования компьютера и сети;<br />
+  * Web-сервер Apache;<br />
+  * Модули mod_perl, mod_php для веб-сервера;<br />
+  * Сетевые утилиты (LAN, modem, Bluetooth, dial-up, VPN, Wireless);<br />
+  * Удаленное управление (ssh, telnet, rdesktop);<br />
+  * Сканер портов (и сервисов) nmap;<br />
+  * Файерволлы ipfw, ipf, pf;<br />
+  * FTP клиенты ftp, lftp;<br />
+  * Клиенты MySQL и PostgreSQL;<br />
+  * Программа для скачивания удаленных файлов/сайтов wget;<br />
+  * Эмуляторы qemu, wine;<br />
+  * Утилиты для кодирования аудио;<br />
+  * Оконные менеджеры KDE3, Gnome, xfce4, Beryl/Compiz, ion3, wmii3, evilwm;<br />
+Ознакомиться с полным списком установленных программ можно просмотрев файл '/truebsd/doc/progslist'.</p>
+<p>Если вам не хватает каких-либо программ в TrueBSD - напишите по адресу: <a href="mailto:nullbsd@gmail.com">nullbsd at gmail dot com</a> и я постараюсь в следующие версии включить нужное вам ПО.</p>
+<h2><a id="FINDBUGS">9. Найденные проблемы</a></h2>
+<p>Если при работе с TrueBSD вы нашли какую нибудь ошибку, или недочет - сообщите об этом по адресу <a href="mailto:nullbsd@gmail.com">nullbsd at gmail dot com</a> (включите в письме вывод команды '/sysutils/version'), либо на форум: <a href="https://truebsdorg.github.io/forum/" title="https://truebsdorg.github.io/forum/">https://truebsdorg.github.io/forum/</a>.<br />
+Примечание: Перед этим убедитесь что ваша версия TrueBSD соответствует текущей (2.0-RC1), либо выше её.</p>
+<h2><a id="COORDINATE">10.  Сотрудничество</a></h2>
+<p>Если у вас есть желание помочь проекту - напишите мне письмо и я в кратчайшие сроки вам отвечу. Помощь может быть разнообразная: требуются люди, которые могут тестировать ОС, писать документацию и утилиты к ней, красиво рисовать, готовы предоставить место на ftp-сервере для зеркала.<br />
+В общем, если есть какой-нибудь талант и желание работать без какой либо корысти - пишите, ибо вместе проще и интереснее учиться и творить что-то новое.</p>
+<h2><a id="ETCDOCS">11. Более подробная информация</a></h2>
+<p>TrueBSD полностью совместима с FreeBSD => документация написанная для FreeBSD будет актуальна и для TrueBSD.<br />
+Лучшим руководством на сегодняшний день (в электронном виде) является handbook по FreeBSD. Найти это руководство можно в каталоге: '/truebsd/doc/freebsd/handbook/' (на русском и английском языках).</p>
+  </div>
+
+  <!--<div class="clear-block clear">-->
+	<div class="">
+    <div class="meta">
+        </div>
+
+      </div>
+
+</div>        <br class="clearfloat" />
+	</div>
+	<br class="clearfloat" />
+
+	<div id="footer">
+		<div class="wrapper"><center>
+	<p>&copy; 2006 — 2015 <a href="https://truebsdorg.github.io">TrueBSD Project</a><br>
+</p></center>
+  		</div>
+	</div>
+</div>
+</body>
+</html>

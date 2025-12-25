@@ -1,0 +1,25 @@
+TrueBSD 2.0-RC2:
+	* Updated the system environment and the kernel to FreeBSD 7.0-STABLE;
+	* Fixed errors in system installer (/sysutils/trueinstall) which were caused by wrong detection storage drives;
+	* Created an official subversion repository (http://truebsd.org/wiki/doku.php?id=subversion); 
+	* Created a non-official port of x11-wm/ion-3;
+	* Created an overlay of the ports tree;
+	* Changed a file system hierarchy;
+	* Created skel files which are used for each new user;
+	* Created a ports tree with patched versions of the software;
+	* Created a kernel module snd_hda_hack.ko for additional Intel audio cards support;
+	* Script /sysutils/apachemanager for managing the Apache web-server;
+	* Script /sysutils/hwdetect for new hardware automatic detection;
+	* Script /sysutils/snddetect for new audio cards detection;
+	* Script /sysutils/ifdetect for net cards detection;
+	* Script /sysutils/flashpluginctl for switching on/off the Adobe (R) Macromedia (R) Flash technology;
+	* Script /sysutils/getoperalang for Opera translational files installation;
+	* Script /sysutils/kblayout for choosing keyboard layout and switching method;
+	* New Prompt for the zsh shell;
+	* Rewrote the prelogin system utility with using the cdialog. Added new items in menu;
+	* Rewrote newtconf script for net configuration with using the sysinstall functionality;
+	* Removed function for creating core files for programs which was stopped with segmentation fault;
+	* Removed createbzip, extractbzip, formatfloppy, termfont system utilities;
+	* Removed all net- and audio cards drivers from the kernel and putted to separate kernel modules;
+	* Created a nice highlighting for the system console and kernel messages;
+	* Updated all software;
